@@ -1,4 +1,3 @@
-# Untervektorräume
 ### Definition
 Ein Untervektorraum ist ein Vektorraum und liegt in ihm drinnen ($\text{Untervektorraummenge } U \subseteq \text{Vektorraummenge } V$). Die Verknüpfungen sind auch die gleichen wobei sie bei $U$ auch nur auf $U$ eingeschränkt sind.
 ### Bedingungen

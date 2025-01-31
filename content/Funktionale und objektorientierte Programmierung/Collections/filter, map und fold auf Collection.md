@@ -1,4 +1,3 @@
-# Die Standardoperationen `filter`, `map` und `fold` auf Collection
 ## `filter`
 ```java
 //Objectmethode von Collection<T>:

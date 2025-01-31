@@ -1,4 +1,3 @@
-# Sortieren mit Comparator
 ## Sortieren einer List mit Comparator
 ```java
 List<Student> list = new LinkedList<Student> ():

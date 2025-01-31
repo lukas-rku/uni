@@ -1,4 +1,3 @@
-# Vollständige Induktion
 [YouTube Link](https://www.youtube.com/watch?v=MD7U_vYaX58)
 1. Induktionsanfang
 	- Eine Formel oder Behauptung

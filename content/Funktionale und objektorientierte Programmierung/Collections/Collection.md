@@ -1,4 +1,3 @@
-# Das Interface Collection
 ## Inhalt von `Collection`
 ```java
 //in java.util:

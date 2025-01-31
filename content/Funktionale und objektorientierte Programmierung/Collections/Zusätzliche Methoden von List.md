@@ -1,4 +1,3 @@
-# Zusätzliche Methoden von List
 ```java
 indexOf
 set

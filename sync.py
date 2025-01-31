@@ -9,9 +9,6 @@ destination = r"C:\Users\Lukas\quartz\content"
 # Run xcopy command
 subprocess.run(f'xcopy "{source}" "{destination}" /E /C /H /Y', shell=True)
 
-# Run npx quartz sync
-subprocess.run("npx quartz sync", shell=True)
-
 # Function to clean markdown files
 def remove_h1_lines(directory):
     h1_pattern = re.compile(r"^#\s+.*")  # Matches lines starting with "#" followed by a space and text
@@ -35,4 +32,7 @@ def remove_h1_lines(directory):
 # Run cleanup
 remove_h1_lines(destination)
 
-print("Sync complete, all H1 headers removed.")
+print("all H1 headers removed.")
+
+# Run npx quartz sync
+subprocess.run("npx quartz sync", shell=True)

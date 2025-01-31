@@ -1,4 +1,3 @@
-# Invertierbare Matrizen
 ### Definition
 Wenn man eine Matrix $A$ mit der Inversen von sich selbst multipliziert so entsteht die Einheitsmatrix:
 $$A^{-1}A=\begin{bmatrix}1&0\\0&1\end{bmatrix}$$

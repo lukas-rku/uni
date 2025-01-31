@@ -1,4 +1,3 @@
-# Spann
 ## Definition
 - Der **Spann** ist ein [[Untervektorräume#Definition|Untervektorraum]] von $V$, der alle Linearkombinationen der gegebenen Vektoren enthält.
 - **Notation:** $\text{span}(M)$ oder $\langle M \rangle_K$, wobei $M$ eine Teilmenge des Vektorraums $V$ ist, die aus Vektoren $v_1, v_2, \ldots, v_k$ besteht:  

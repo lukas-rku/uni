@@ -1,4 +1,3 @@
-# Maps
 ## `Keys` und `Values`
 ```java
 public class X {

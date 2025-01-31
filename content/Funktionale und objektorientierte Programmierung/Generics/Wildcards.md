@@ -1,4 +1,3 @@
-# Wildcards
 ## Beispiel ohne Wildcard
 ```java
 public class X<T> {

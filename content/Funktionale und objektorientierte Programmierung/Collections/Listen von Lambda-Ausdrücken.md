@@ -1,4 +1,3 @@
-# Listen von Lambda-Ausdrücken
 ## Lambda-Ausdrücke in einer `List`
 ```java
 List<IntPredicate>  predicates = new ...();

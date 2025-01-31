@@ -1,4 +1,3 @@
-# Generische Methoden
 ## Die Beispielmethode `makePair`
 
 ```java

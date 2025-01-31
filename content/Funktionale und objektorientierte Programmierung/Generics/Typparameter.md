@@ -1,4 +1,3 @@
-# Typparameter
 ## Beispiele für mögliche und nicht mögliche Typparameter
 
 ```java

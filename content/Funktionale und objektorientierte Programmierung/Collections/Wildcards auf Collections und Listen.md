@@ -1,4 +1,3 @@
-# Wildcards auf Collections und Listen
 ## Wildcards mit `extends` auf `Collection` und `List`
 ```java
 public boolean containsNull(Collection<? extends Number> coll) {

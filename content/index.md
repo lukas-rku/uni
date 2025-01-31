@@ -1,4 +1,3 @@
-# Lernzettel Overview
 ## Mathematik 1
 ### Vektorräume und lineare Abbildungen
 - [[Untervektorräume]]

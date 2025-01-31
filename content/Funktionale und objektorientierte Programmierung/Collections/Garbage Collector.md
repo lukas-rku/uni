@@ -1,4 +1,3 @@
-# Der Garbage Collector
 ## Den Garbage Collector austricksen
 Es besteht bei einer [[Eigene LinkedList-Klasse|LinkedList]] auch die Gefahr, dass der Speicherplatz durch einen Programmierfehler doch durch immer neue Objekte vollständig aufgebraucht wird bis das Programm dann irgendwann abbricht.
 ```java

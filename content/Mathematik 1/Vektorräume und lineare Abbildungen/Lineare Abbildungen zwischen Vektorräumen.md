@@ -1,4 +1,3 @@
-# Lineare Abbildungen zwischen Vektorräume
 ### Definition
 - Sei Vektorraum $(V,\oplus, \odot)$ und $(W,\oplus, \odot)$
 - Es muss gelten:

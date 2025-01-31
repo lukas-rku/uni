@@ -1,4 +1,3 @@
-# Methoden von `Collection`
 ```java
 add
 addAll

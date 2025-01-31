@@ -1,4 +1,3 @@
-# Eigene `LinkedList`-Klasse
 ## Beispielhafte Implementation von `LinkedList`
 ```java
 public class ListItem <T> {

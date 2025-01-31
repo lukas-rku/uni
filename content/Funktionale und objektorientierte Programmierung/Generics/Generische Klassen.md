@@ -1,4 +1,3 @@
-# Generische Klassen
 ## Beispiel einer generischen Klasse
 ### Die Klasse `Pair`
 ```java

@@ -1,4 +1,3 @@
-# Körper
 ### Definition
 Hat:
 - Menge

@@ -1,4 +1,3 @@
-# Iterator
 ## Anwendungsbeispiel von `Iterator`
 ```java
 Iterator<Number> it1 = c1.iterator();

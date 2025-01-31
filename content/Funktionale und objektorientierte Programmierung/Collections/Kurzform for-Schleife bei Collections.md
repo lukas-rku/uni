@@ -1,4 +1,3 @@
-# Kurzform der `for`-Schleife bei Collections
 ## `for`-Schleifen mit Collections
 ```java
 public void writeAllElements(Collection<String> coll) {

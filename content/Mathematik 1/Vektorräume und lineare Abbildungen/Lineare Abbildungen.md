@@ -1,4 +1,3 @@
-# Lineare Abbildungen
 ### Definition
 Zuordnung $f: \mathbb{R}^n\rightarrow\mathbb{R}^m$
 - Jedem Punkt $P$ von $\mathbb{R}^n$ wird $P'$ von $\mathbb{R}^m$ zugeordnet
