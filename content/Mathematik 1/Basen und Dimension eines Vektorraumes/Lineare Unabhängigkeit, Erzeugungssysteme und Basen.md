@@ -28,7 +28,8 @@ Eine Basis ist ein **Erzeugungssystem**, jedoch muss die Darstellung eindeutig b
 
 ---
 ## Prüfung auf Basis
-$$\begin{gather*}
+$$
+\begin{gather*}
 B=\left\lbrace
 \begin{pmatrix}1\\0\\2\end{pmatrix},
 \begin{pmatrix}3\\2\\1\end{pmatrix},

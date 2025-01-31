@@ -28,7 +28,8 @@
 - $\text{ker}(f)=\left\lbrace x\in V\mid f\left(x\right)=0\in W\right\rbrace$
 ## Bestimmen des Kerns
 - Abbildungsmatrix mit dem Nullvektor gleichsetzen und Gleichungssystem aufstellen:
-$$\begin{align*}
+$$
+\begin{align*}
 A&=\vec v_0\\
 \begin{pmatrix}0 & 4 & -4\\1 & 1 & 0\\5 & 7 & -2\end{pmatrix}&=\begin{pmatrix}0\\0\\0\end{pmatrix}\\
 \end{align*}

@@ -18,6 +18,7 @@
 - [[Spann]]
 - [[Basiswechsel|Basiswechsel]]
 - [[Lineare Unabhängigkeit, Erzeugungssysteme und Basen|Lineare Unabhängigkeit, Erzeugungssysteme und Basen]]
+---
 ## Funktionale und objektorientierte Programmierung
 ### Generics
 - [[Generische Klassen]]
