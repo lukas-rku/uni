@@ -1,3 +1,10 @@
+---
+title: Lineare Unabhängigkeit, Erzeugungssysteme und Basen
+description:
+draft: false
+date: 2025-01-27
+tags:
+---
 ## Lineare Unabhängigkeit & Erzeugungssysteme
 Ein Vektor ist linear unabhängig von einem anderen, wenn er **kein Vielfaches von ihm** ist.  
 Beispiele:

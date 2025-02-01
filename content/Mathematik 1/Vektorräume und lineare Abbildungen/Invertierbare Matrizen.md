@@ -1,3 +1,10 @@
+---
+title: Invertierbare Matrizen
+description:
+draft: false
+date: 2025-01-25
+tags:
+---
 ### Definition
 Wenn man eine Matrix $A$ mit der Inversen von sich selbst multipliziert so entsteht die Einheitsmatrix:
 $$

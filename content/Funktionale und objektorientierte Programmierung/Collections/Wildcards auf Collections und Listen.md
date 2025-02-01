@@ -1,3 +1,10 @@
+---
+title: Wildcards auf Collections und Listen
+description:
+draft: false
+date: 2025-01-30
+tags:
+---
 ## Wildcards mit `extends` auf `Collection` und `List`
 ```java
 public boolean containsNull(Collection<? extends Number> coll) {

@@ -1,3 +1,10 @@
+---
+title: Generische Methoden
+description:
+draft: false
+date: 2025-01-29
+tags:
+---
 
 ## Die Beispielmethode `makePair`
 

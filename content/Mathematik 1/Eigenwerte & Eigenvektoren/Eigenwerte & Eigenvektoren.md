@@ -1,3 +1,11 @@
+---
+title: Eigenwerte & Eigenvektoren
+description:
+draft: false
+date: 2025-01-24
+tags:
+  - missingImage
+---
 [3Blue1Brown](https://www.youtube.com/watch?v=PFDu9oVAE-g)
 ### Definition Eigenvektor
 Ein Eigenvektor ist ein Vektor zugehörig zu einer [[Lineare Abbildungen#Definition|lineare Abbildung]], welcher nicht von seinem [[Spann#Definition|Spann]] "geworfen" wird. Das heißt, dass er lediglich gestaucht oder gestreckt wird, wenn eine Abbildung auf ihm angewendet wird. Nicht jede Abbildung muss Eigenvektoren haben.

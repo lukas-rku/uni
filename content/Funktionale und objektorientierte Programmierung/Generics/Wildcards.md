@@ -1,3 +1,10 @@
+---
+title: Wildcards
+description:
+draft: false
+date: 2025-01-29
+tags:
+---
 ## Beispiel ohne Wildcard
 ```java
 public class X<T> {

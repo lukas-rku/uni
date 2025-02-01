@@ -1,3 +1,10 @@
+---
+title: Lineare Abbildungen zwischen Vektorräume
+description:
+draft: false
+date: 2025-01-22
+tags:
+---
 ### Definition
 - Sei Vektorraum $(V,\oplus, \odot)$ und $(W,\oplus, \odot)$
 - Es muss gelten:

@@ -1,3 +1,10 @@
+---
+title: Das Interface Collection
+description:
+draft: false
+date: 2025-01-30
+tags:
+---
 ## Inhalt von `Collection`
 ```java
 //in java.util:

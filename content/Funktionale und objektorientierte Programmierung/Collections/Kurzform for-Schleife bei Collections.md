@@ -1,3 +1,10 @@
+---
+title: Kurzform der for-Schleife bei Collections
+description:
+draft: false
+date: 2025-01-31
+tags:
+---
 ## `for`-Schleifen mit Collections
 ```java
 public void writeAllElements(Collection<String> coll) {

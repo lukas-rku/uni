@@ -1,3 +1,12 @@
+---
+title: Bild, Urbild und Kern einer linearen Abbildung
+description:
+draft: false
+date: 2025-01-22
+tags:
+  - missingImage
+  - incomplete
+---
 ## Definition Bild
 - Das Bild ist eine Menge.
 - $\text{im}(f) = f(V) := \lbrace f(x) \mid x \in V \rbrace$

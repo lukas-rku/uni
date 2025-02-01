@@ -1,7 +1,9 @@
 ---
-title: Eigene `LinkedList`-Klasse
+title: Eigene LinkedList-Klasse
+description:
 draft: false
 date: 2025-01-31
+tags:
 ---
 ## Beispielhafte Implementation von `LinkedList`
 ```java

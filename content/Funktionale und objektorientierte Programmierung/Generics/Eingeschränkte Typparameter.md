@@ -1,3 +1,10 @@
+---
+title: Eingeschränkte Typparameter
+description:
+draft: false
+date: 2025-01-29
+tags:
+---
 ## Die generische Beispielklasse A mit Einschränkung auf `X`, `Y` und `Z`
 ```java
 abstract public class X{

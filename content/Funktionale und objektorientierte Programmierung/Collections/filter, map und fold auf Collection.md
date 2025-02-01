@@ -1,3 +1,10 @@
+---
+title: Die Standardoperationen filter, map und fold auf Collection
+description:
+draft: false
+date: 2025-01-31
+tags:
+---
 ## `filter`
 ```java
 //Objectmethode von Collection<T>:

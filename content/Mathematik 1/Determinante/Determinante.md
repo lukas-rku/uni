@@ -1,3 +1,11 @@
+---
+title: Determinante
+description:
+draft: false
+date: 2025-01-25
+tags:
+  - missingImage
+---
 [3Blue1Brown](https://www.youtube.com/watch?v=Ip3X9LOh2dk)
 ### Definition
 - Die Determinante beschreibt die Veränderung der Fläche von $A = \left\vert\vec x\right\vert\cdot\left\vert\vec y\right\vert$ durch eine lineare Abbildung in $\mathbb{R}^2$.

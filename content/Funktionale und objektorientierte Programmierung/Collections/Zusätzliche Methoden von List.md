@@ -1,11 +1,9 @@
 ---
-title: Zusätzliche Methoden von `List`
-description: In Java kann eine Liste von Objekten mithilfe eines benutzerdefinierten `Comparator` sortiert werden. Im Beispiel wird eine Liste von `Student`-Objekten anhand ihrer Immatrikulationsnummer geordnet, wobei der `EnrollmentNumberComparator` zur Sortierung verwendet wird.
+title: Zusätzliche Methoden von List
+description:
 draft: false
-date: 2025-01-31
+date: 2025-01-30
 tags:
-  - fop
-  - collections
 ---
 ## Die zusätzlichen Methoden
 ```java

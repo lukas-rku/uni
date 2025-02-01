@@ -1,3 +1,11 @@
+---
+title: Vollständige Induktion
+description:
+draft: false
+date: 2025-01-22
+tags:
+  - missingImage
+---
 [YouTube Link](https://www.youtube.com/watch?v=MD7U_vYaX58)
 1. Induktionsanfang
 	- Eine Formel oder Behauptung

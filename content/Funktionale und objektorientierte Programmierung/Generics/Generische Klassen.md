@@ -1,3 +1,10 @@
+---
+title: Generische Klassen
+description:
+draft: false
+date: 2025-01-29
+tags:
+---
 ## Beispiel einer generischen Klasse
 ### Die Klasse `Pair`
 ```java

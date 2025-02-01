@@ -1,7 +1,9 @@
 ---
-title: Methoden von `Collection`
+title: Methoden von Collection
+description:
 draft: false
-date: 2025-01-31
+date: 2025-01-30
+tags:
 ---
 ## Auswahl von Methoden
 ```java

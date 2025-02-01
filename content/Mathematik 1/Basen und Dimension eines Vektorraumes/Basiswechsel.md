@@ -1,3 +1,11 @@
+---
+title: Basiswechsel
+description:
+draft: false
+date: 2025-01-29
+tags:
+  - missingImage
+---
 [3Blue1Brown](https://www.youtube.com/watch?v=P2LTAUO1TdA)
 ## Definition 
 Der Nullpunkt ist immer identisch allerdings kann man Koordinaten unterschiedlich definieren. Das übliche Koordinatensystem ist:

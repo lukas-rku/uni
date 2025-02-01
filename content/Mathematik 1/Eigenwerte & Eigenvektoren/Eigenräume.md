@@ -1,3 +1,10 @@
+---
+title: Eigenräume
+description:
+draft: false
+date: 2025-01-26
+tags:
+---
 ## Definition
 Ein **Eigenraum** eines linearen Operators $A$ ist der zu einem Eigenwert $\lambda$ gehörige Unterraum, der aus allen [[Eigenwerte & Eigenvektoren#Definition Eigenvektor|Eigenvektoren]] $\mathbf{v}$ sowie dem Nullvektor besteht. Formal gilt:
 

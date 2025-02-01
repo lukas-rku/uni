@@ -1,3 +1,10 @@
+---
+title: Iterator
+description:
+draft: false
+date: 2025-01-31
+tags:
+---
 ## Anwendungsbeispiel von `Iterator`
 ```java
 Iterator<Number> it1 = c1.iterator();

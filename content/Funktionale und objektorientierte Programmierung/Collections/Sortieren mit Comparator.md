@@ -1,11 +1,9 @@
 ---
 title: Sortieren mit Comparator
-description: In Java kann eine Liste von Objekten mithilfe eines benutzerdefinierten `Comparator` sortiert werden. Im Beispiel wird eine Liste von `Student`-Objekten anhand ihrer Immatrikulationsnummer geordnet, wobei der `EnrollmentNumberComparator` zur Sortierung verwendet wird.
+description:
 draft: false
 date: 2025-01-31
 tags:
-  - fop
-  - collections
 ---
 ## Sortieren einer List mit Comparator
 ```java

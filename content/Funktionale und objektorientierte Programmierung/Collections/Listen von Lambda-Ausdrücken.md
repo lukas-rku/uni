@@ -1,3 +1,10 @@
+---
+title: Listen von Lambda-Ausdrücken
+description:
+draft: false
+date: 2025-01-30
+tags:
+---
 ## Lambda-Ausdrücke in einer `List`
 ```java
 List<IntPredicate>  predicates = new ...();

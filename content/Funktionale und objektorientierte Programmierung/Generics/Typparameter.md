@@ -1,3 +1,10 @@
+---
+title: Typparameter
+description:
+draft: false
+date: 2025-01-29
+tags:
+---
 ## Beispiele für mögliche und nicht mögliche Typparameter
 
 ```java
