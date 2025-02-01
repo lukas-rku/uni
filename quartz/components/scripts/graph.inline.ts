@@ -197,8 +197,15 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       return computedStyleMap["--secondary"]
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
-    } else {
-      return computedStyleMap["--gray"]
+    } else if (d.id.startsWith("QUOTES")){ 
+      return "#ffff55" // bright yellow
+    } else if (d.id.startsWith("THOUGHTS")){ 
+      return "#00bb00" // bright green
+    } else if (d.id.startsWith("TOPICS")){ 
+      return "#ff00ff" // bright magenta
+  } else {
+        // debugWrite("NodeData.id = " + d.id)
+        return "var(--gray)"
     }
   }
 
