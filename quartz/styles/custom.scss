@@ -1,3 +1,51 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* General and default image blending */
+
+.theme-dark img {
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: screen;
+    width: 75%;
+}
+
+/*Emblemed images blending tweaks */
+
+.theme-dark .popover.hover-popover .markdown-preview-view img {
+    mix-blend-mode: screen;
+    /*filter: opacity(1);*/
+}
+
+.theme-light .popover.hover-popover .markdown-preview-view img {
+    mix-blend-mode: multiply;
+    /*filter: opacity(0.95);*/
+}
+
+/* Image dynamic colors inversion */
+
+.theme-dark img[alt$="d"] {
+  filter: invert(1) hue-rotate(180deg) contrast(0.725);
+}
+
+.theme-dark img[alt$="d0"] {
+  filter: invert(1) hue-rotate(180deg) contrast(0.765);
+}
+
+.theme-dark img[alt$="small"] {
+  width: 25%
+}
+
+.theme-dark img[alt$="mediumd0"] {
+  filter: invert(1) hue-rotate(180deg) contrast(0.765);
+  width: 50%
+}
+
+.theme-dark img[alt$="medium"] {
+  width: 50%
+}
+
+.theme-dark img[alt$="smalld0"] {
+  filter: invert(1) hue-rotate(180deg) contrast(0.765);
+  width: 25%
+}
