@@ -48,3 +48,6 @@ date: 2025-01-30
 	- [[Eigene LinkedList-Klasse]]
 	- [[Zyklische Listen]]
 	- [[Garbage Collector]]
+- Streams & Files
+	- [[Streams]]
+	- [[Optional]]
