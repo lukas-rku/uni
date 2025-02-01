@@ -3,6 +3,7 @@ title: Overview
 description: Lernzettel - Overview
 draft: false
 date: 2025-01-30
+image: https://banner2.cleanpng.com/20180610/jeu/aa8r2y6ex.webp
 ---
 
 ---
@@ -51,3 +52,5 @@ date: 2025-01-30
 - Streams & Files
 	- [[Streams]]
 	- [[Optional]]
+	- [[System Properties]]
+	- [[Streams und Dateien]]
