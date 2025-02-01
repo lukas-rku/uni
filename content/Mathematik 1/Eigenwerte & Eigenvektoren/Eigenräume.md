@@ -1,6 +1,6 @@
 ---
 title: Eigenräume
-description:
+description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-26
 tags:

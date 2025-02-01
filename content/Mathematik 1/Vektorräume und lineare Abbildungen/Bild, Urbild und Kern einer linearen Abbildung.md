@@ -1,6 +1,6 @@
 ---
 title: Bild, Urbild und Kern einer linearen Abbildung
-description:
+description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-22
 tags:

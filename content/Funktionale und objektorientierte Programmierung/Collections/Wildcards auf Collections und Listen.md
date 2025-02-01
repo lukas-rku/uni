@@ -1,6 +1,6 @@
 ---
 title: Wildcards auf Collections und Listen
-description:
+description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
 date: 2025-01-30
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Overview
+description: Lernzettel - Overview
 draft: false
 date: 2025-01-30
 ---

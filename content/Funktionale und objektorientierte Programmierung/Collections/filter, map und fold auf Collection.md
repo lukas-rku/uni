@@ -1,6 +1,6 @@
 ---
 title: Die Standardoperationen filter, map und fold auf Collection
-description:
+description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
 date: 2025-01-31
 tags:

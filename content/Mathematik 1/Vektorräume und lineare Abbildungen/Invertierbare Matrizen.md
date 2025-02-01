@@ -1,6 +1,6 @@
 ---
 title: Invertierbare Matrizen
-description:
+description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-25
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Lineare Abbildungen
-description:
+description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-20
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Wildcards
-description:
+description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
 date: 2025-01-29
 tags:

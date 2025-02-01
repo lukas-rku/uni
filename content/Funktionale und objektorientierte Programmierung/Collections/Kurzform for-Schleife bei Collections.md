@@ -1,6 +1,6 @@
 ---
 title: Kurzform der for-Schleife bei Collections
-description:
+description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
 date: 2025-01-31
 tags:

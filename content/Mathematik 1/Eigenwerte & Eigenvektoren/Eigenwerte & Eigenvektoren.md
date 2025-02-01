@@ -1,6 +1,6 @@
 ---
 title: Eigenwerte & Eigenvektoren
-description:
+description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-24
 tags:

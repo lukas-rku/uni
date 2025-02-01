@@ -1,6 +1,6 @@
 ---
 title: Basiswechsel
-description:
+description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-29
 tags:
