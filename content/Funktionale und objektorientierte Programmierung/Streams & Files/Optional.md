@@ -1,5 +1,5 @@
 ---
-title: Die Hilfsklasse Optional
+title: Die Klasse Optional
 description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
 date: 2025-02-01

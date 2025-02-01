@@ -1,12 +1,22 @@
 import subprocess
 import os
 import re
+import shutil
 
 # Define paths
 source = r"E:\System Folders\Documents\Informatik Studium\Informatik Studium\Lernzettel"
 destination = r"C:\Users\Lukas\quartz\content"
 
-# Run xcopy command
+# Delete all contents inside the destination folder
+if os.path.exists(destination):
+    for item in os.listdir(destination):
+        item_path = os.path.join(destination, item)
+        if os.path.isdir(item_path):
+            shutil.rmtree(item_path)  # Delete directories
+        else:
+            os.remove(item_path)  # Delete files
+
+# Run xcopy command to copy files
 subprocess.run(f'xcopy "{source}" "{destination}" /E /C /H /Y', shell=True)
 
 # Function to clean markdown files

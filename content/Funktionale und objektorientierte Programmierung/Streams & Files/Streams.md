@@ -4,7 +4,6 @@ description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
 date: 2025-02-01
 tags:
-  - incomplete
 ---
 ## Streams als generische Schnittstelle
 Das Interface %%Link Interface%% `Stream` ist generisch und befindet sich in dem Package %%link package%% `java.util.stream`. `Streams` bilden eine einheitliche Schnittstelle für [[Eigene LinkedList-Klasse|Listen]], Arrays%%Link arrays%%, Dateien sowie unendliche Sequenzen von Werten des Typparameters.
@@ -64,3 +63,30 @@ Optional <Number> opt = Stream.of(...)
 							  .max(new MyNumberComparator());
 ```
 Und hier nochmal als Kurzschreibweise.
+## Streams und Iteratoren
+```java
+Iterator iter = stream.iterator();
+
+while(iter.hasNext()) {
+	Number n = iter.next();
+	doSomethingWith(n);
+}
+```
+So wie [[Collection|Collections]] bieten Streams auch mithilfe eines [[Iterator|Iterators]] die Möglichkeit des elementweisen Durchlaufen. Lediglich die Generierung unterscheidet sich, je nachdem, worauf der `Iterator` laufen soll.
+## Arrays aus Streams
+```java
+List<String> list = stream.collect(Collectors.toList());
+Number[] a = stream.toArray(Number[]::new);
+```
+Die Klasse `Collectors` ist eine Sammlung von Klassenmethoden, die verschiedene Methoden  zur Weiterverarbeitung von Streams bereitstellt. Die Methode `collect` der Klasse `Stream` hat als Parameter exakt das, was die Methode `toList` von `Collectors` zurückliefert, nämlich das generische Interface `Collector`. (*Achtung; `Collectors` $\not=$`Collector`*). Sowohl auf `Collector` und `Collectors` wird hier nicht näher eingegangen.
+
+Die generische Methode `toArray` von `Stream` besitzt einen Parameter vom Typ `IntFunction`, was ein generisches `Functional Interface` aus `java.util.function` ist. So wie hier bekommt sie ein `int` und liefert ein `Array` vom generischen Typ, hier also `Number`, zurück. Wie das `Array` konkret erzeugt wird, lässt sich durch den Parameter der Methode `toArray` steuern. %%Kapitel 04c, Link Lambda%%
+
+```java
+if(Arrays.equals(a, Arrays.stream(a).toArray(Number[]::new))) //true
+```
+Eine wichtige Erkenntnis ist, dass die beiden Ausdrücke zur Erzeugung einer `List` beziehungsweise eines `Arrays` aus einem `Stream` die exakte Umkehrung zu der Erzeugung eines `Streams` aus einem `Array` oder einer `List`. Bemerkenswert ist, dass hier die Nutzung von `equals` wichtig ist da 
+```java
+a == Arrays.stream(a).toArray(Number[]::new)
+```
+nur dann `true` ist, wenn beide Referenzen auf das gleich Objekt zeigen. Das ist allerdings höchst unwahrscheinlich.

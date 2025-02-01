@@ -18,7 +18,7 @@ date: 2025-01-30
 - Körper
 	- [[Körper|Körper]] %%unvollständig%%
 -  Eigenvektoren, Eigenwerte & Eigenräume
-	- [[Eigenwerte & Eigenvektoren]]
+	- [[Eigenwerte und Eigenvektoren]]
 	- [[Eigenräume]]
 - Determinante
 	- [[Determinante|Determinante]]
