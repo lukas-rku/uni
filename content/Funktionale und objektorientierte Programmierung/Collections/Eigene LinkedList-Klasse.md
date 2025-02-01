@@ -1,3 +1,8 @@
+---
+title: Eigene `LinkedList`-Klasse
+draft: false
+date: 2025-01-31
+---
 ## Beispielhafte Implementation von `LinkedList`
 ```java
 public class ListItem <T> {

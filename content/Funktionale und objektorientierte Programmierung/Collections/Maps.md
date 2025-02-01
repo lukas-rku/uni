@@ -1,3 +1,8 @@
+---
+title: Maps
+draft: false
+date: 2025-01-31
+---
 ## `Keys` und `Values`
 ```java
 public class X {

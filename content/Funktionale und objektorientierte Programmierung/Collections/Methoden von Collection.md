@@ -1,3 +1,9 @@
+---
+title: Methoden von `Collection`
+draft: false
+date: 2025-01-31
+---
+## Auswahl von Methoden
 ```java
 add
 addAll
