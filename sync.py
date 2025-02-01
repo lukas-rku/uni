@@ -29,10 +29,31 @@ def remove_h1_lines(directory):
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.writelines(new_lines)
 
+def convert_special_markers(directory):
+    marker_pattern = re.compile(r"%%---|---%%")  # Matches '%%---' or '---%%'
+    
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith(".md"):  # Only process markdown files
+                file_path = os.path.join(root, file)
+                
+                # Read file content
+                with open(file_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                
+                # Replace special markers with '---'
+                updated_content = marker_pattern.sub("---", content)
+                
+                # Write the updated content back
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(updated_content)
+
 # Run cleanup
 remove_h1_lines(destination)
+convert_special_markers(destination)
 
-print("all H1 headers removed.")
+print("All H1 headers removed and special markers converted.")
 
 # Run npx quartz sync
 subprocess.run("npx quartz sync", shell=True)
+
