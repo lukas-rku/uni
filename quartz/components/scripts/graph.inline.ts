@@ -1,4 +1,4 @@
-import type { ContentDetails } from "../../plugins/emitters/contentIndex"
+"../../plugins/emitters/contentIndex"
 import {
   SimulationNodeDatum,
   SimulationLinkDatum,
@@ -181,6 +181,10 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--m1",
+    "--fop",
+    "--dt",
+    "--afe",
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -192,22 +196,27 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
 
   // calculate color
   const color = (d: NodeData) => {
-    const isCurrent = d.id === slug
+    const isCurrent = d.id === slug;
     if (isCurrent) {
-      return computedStyleMap["--secondary"]
+      return computedStyleMap["--secondary"];
+    } else if (/^Mathematik-1\//.test(d.id)) { 
+      // Check if d.id starts with "Mathematik-1/"
+      return computedStyleMap["--m1"]; 
+    } else if (/^Funktionale-und-objektorientierte-Programmierung\//.test(d.id)) { 
+      // Check if d.id starts with "Mathematik-1/"
+      return computedStyleMap["--fop"]; 
+    } else if (/^Digitaltechnik\//.test(d.id)) { 
+      // Check if d.id starts with "Mathematik-1/"
+      return computedStyleMap["--dt"]; 
+    } else if (/^Automaten-formale-Sprache-und-Entscheidbarkeit\//.test(d.id)) { 
+      // Check if d.id starts with "Mathematik-1/"
+      return computedStyleMap["--afe"]; 
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
-      return computedStyleMap["--tertiary"]
-    } else if (d.id.startsWith("QUOTES")){ 
-      return "#ffff55" // bright yellow
-    } else if (d.id.startsWith("THOUGHTS")){ 
-      return "#00bb00" // bright green
-    } else if (d.id.startsWith("TOPICS")){ 
-      return "#ff00ff" // bright magenta
-  } else {
-        // debugWrite("NodeData.id = " + d.id)
-        return "var(--gray)"
+      return computedStyleMap["--tertiary"];
+    } else {
+      return computedStyleMap["--gray"];
     }
-  }
+  };
 
   function nodeRadius(d: NodeData) {
     const numLinks = graphData.links.filter(
