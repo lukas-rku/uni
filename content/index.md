@@ -54,3 +54,6 @@ image: /assets/og-image.png
 	- [[Optional]]
 	- [[System Properties]]
 	- [[Streams und Dateien]]
+	- [[IntStreams, LongStreams und DoubleStreams]]
+	- [[Random Zahlen und Streams]]
+	- [[Unendliche Streams selbstgemacht]]
