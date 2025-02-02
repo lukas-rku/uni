@@ -3,7 +3,7 @@ title: Overview
 description: Lernzettel - Overview
 draft: false
 date: 2025-01-30
-image: tud.pages.dev/assets/og-image.png
+image: /assets/og-image.png
 ---
 
 ---
