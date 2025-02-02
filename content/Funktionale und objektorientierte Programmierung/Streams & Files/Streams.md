@@ -50,6 +50,9 @@ Die Klasse `Arrays`%%link Arrays%% im Package `java.lang` bietet nützliche Meth
 ```java
 Stream<Number> stream1 = Stream.of(new Integer(1), new Integer(2));
 ```
+
+^9cb8e4
+
 Mit der Methode `of` kann man auch ohne Umwege über eine `Liste` oder ein `Array` ein `Stream` definieren. Klassenmethoden bleiben bei Generizität außen vor, daher wird beim Aufruf kein generischer Typparameter benötigt.
 
 ```java

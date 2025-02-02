@@ -2,6 +2,7 @@ import subprocess
 import os
 import re
 import shutil
+import time
 
 # Define paths
 source = r"E:\System Folders\Documents\Informatik Studium\Informatik Studium\Lernzettel"
@@ -67,3 +68,4 @@ print("All H1 headers removed and special markers converted.")
 # Run npx quartz sync
 subprocess.run("npx quartz sync", shell=True)
 
+time.sleep(10)
