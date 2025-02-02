@@ -6,6 +6,7 @@ export interface ColorScheme {
   dark: string
   secondary: string
   tertiary: string
+  current: string
   m1: string
   fop: string
   dt: string
@@ -53,6 +54,7 @@ ${stylesheet.join("\n\n")}
   --dark: ${theme.colors.lightMode.dark};
   --secondary: ${theme.colors.lightMode.secondary};
   --tertiary: ${theme.colors.lightMode.tertiary};
+  --current: ${theme.colors.lightMode.current};
   --m1: ${theme.colors.lightMode.m1};
   --fop: ${theme.colors.lightMode.fop};
   --dt: ${theme.colors.lightMode.dt};
@@ -73,6 +75,7 @@ ${stylesheet.join("\n\n")}
   --dark: ${theme.colors.darkMode.dark};
   --secondary: ${theme.colors.darkMode.secondary};
   --tertiary: ${theme.colors.darkMode.tertiary};
+  --current: ${theme.colors.darkMode.current};
   --m1: ${theme.colors.darkMode.m1};
   --fop: ${theme.colors.darkMode.fop};
   --dt: ${theme.colors.darkMode.dt};

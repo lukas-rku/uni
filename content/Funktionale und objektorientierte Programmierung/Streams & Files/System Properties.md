@@ -22,5 +22,5 @@ Hat das Programm nicht die Berechtigung auf eines dieser Attribute zuzugreifen, 
 - `user.home` gibt das Heimatverzeichnis des Nutzers, der das Programm ausführt, zurück.
 - `user.dir` gibt das momentane Arbeitsverzeichnis (`working directory`) des Prozesses zurück.
 - `user.name` gibt den Namen des Nutzers zurück
-- `file.seperator` gibt das Zeichen, dass von dem Betriebssystem als Trennung bei Verzeichnispfaden genutzt wird zurück. Bei Microsoft ist dies ein `\` und bei `UNIX`- Systemen ein `/`.
-- `line.seperator` gibt das Zeichen, welches von dem Betriebssystem als Zeilentrennung in Textdateien genutzt wird zurück.
+- `file.seperator` gibt das Zeichen, dass von dem Betriebssystem als Trennung bei Verzeichnispfaden genutzt wird zurück. Bei Microsoft ist dies ein `\` und bei `UNIX`- Systemen ein `/`. ^ecb983
+- `line.seperator` gibt das Zeichen, welches von dem Betriebssystem als Zeilentrennung in Textdateien genutzt wird zurück. ^8a7a36

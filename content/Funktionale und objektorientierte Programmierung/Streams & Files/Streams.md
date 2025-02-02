@@ -32,10 +32,9 @@ Methoden der Klasse `Stream`, die wie `filter` und `map` wieder einen `Stream` z
 Die Methode `max` ist ein Beispiel für eine `terminal operation`, also eine Terminalmethode, die am Ende der Kette von Zwischenoperationen sinnvoll ist.
 
 ```java
-Optional<Number> opt = list.stream().filter(myPred)
-									.map(myFct)
-									.max(new MyNumberComparator());
+Optional<Number> opt = list.stream().filter(myPred).map(myFct).max(new MyNumberComparator());
 ```
+
 Mehrere `intermediate operations` gefolgt von einer `terminal operation` können in einer einzigen Anweisung zusammengefasst werden. Wie auch sonst müssen die Rückgaben nicht unbedingt in Variablen zwischengespeichert werden, sondern können direkt vom nächsten Schritt weiterverwendet werden.
 ## Streams mit Arrays
 ```java
@@ -44,10 +43,7 @@ for(int i = 0; i < 100; i++) {
 	a[i] = 3 + 4 * i;
 }
 
-Optional<Number> opt = Arrays.stream(a)
-							 .filter(myPred)
-							 .map(myFct)
-							 .max(new MyNumberComparator());
+Optional<Number> opt = Arrays.stream(a).filter(myPred).map(myFct).max(new MyNumberComparator());
 ```
 Die Klasse `Arrays`%%link Arrays%% im Package `java.lang` bietet nützliche Methoden für die Arbeit mit Arrays. Die generische Methode `stream` nimmt ein Array als Parameter und gibt einen `Stream` zurück, der mit dem Komponententyp des Arrays instanziiert ist. Dieser `Stream` enthält die Array-Elemente in aufsteigender Reihenfolge der Indizes.
 
@@ -57,10 +53,7 @@ Stream<Number> stream1 = Stream.of(new Integer(1), new Integer(2));
 Mit der Methode `of` kann man auch ohne Umwege über eine `Liste` oder ein `Array` ein `Stream` definieren. Klassenmethoden bleiben bei Generizität außen vor, daher wird beim Aufruf kein generischer Typparameter benötigt.
 
 ```java
-Optional <Number> opt = Stream.of(...)
-							  .filter(myPred)
-							  .map(myFct)
-							  .max(new MyNumberComparator());
+Optional <Number> opt = Stream.of(...).filter(myPred).map(myFct).max(new MyNumberComparator());
 ```
 Und hier nochmal als Kurzschreibweise.
 ## Streams und Iteratoren

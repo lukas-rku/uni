@@ -181,6 +181,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--current",
     "--m1",
     "--fop",
     "--dt",
@@ -198,7 +199,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug;
     if (isCurrent) {
-      return computedStyleMap["--secondary"];
+      return computedStyleMap["--current"];
     } else if (/^Mathematik-1\//.test(d.id)) { 
       // Check if d.id starts with "Mathematik-1/"
       return computedStyleMap["--m1"]; 
