@@ -56,4 +56,8 @@ image: og-image.png
 	- [[Streams und Dateien]]
 	- [[IntStreams, LongStreams und DoubleStreams]]
 	- [[Random Zahlen und Streams]]
-	- [[Unendliche Streams selbstgemacht]]
+	- [[Unendliche Streams]]
+	- [[Streams in Racket]] %%unvollständig%%
+	- [[Bytedaten direkt]]
+	- [[Textdaten direkt]]
+	- [[Files]]
