@@ -8,7 +8,6 @@ tags:
 ---
 ## Die Abstraktionsebenen
 Bei der Entwicklung von Software sind fünf verschiedene Abstraktionsebenen wichtig, von denen man auf die Programmieraufgabe blicken kann. Im Folgenden wird betrachtet, welche typischen Fehler häufig gemacht werden.
-
 ### Lexikalische Ebene
 ```java
 wile    ...   while
@@ -33,7 +32,6 @@ Wird ein lexikalisches oder syntaktisches Konstrukt für die Definition eines an
 Ein `ε` steht für das leere Wort, ein `<<ident-char-list>>` ist also ein syntaktisches Konstrukt, dass auch leer sein kann.
 
 Ein korrekt gebildeter `Identifier` wäre beispielsweise `c3_Po`, da aus der gegebenen Definition zusammengebaut werden kann.
-
 ### Syntaktische Ebene
 ```java
 (({}...)...[...]...{...[...{...}...]...})...{...[...]...(...)...}

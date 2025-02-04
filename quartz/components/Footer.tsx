@@ -14,13 +14,13 @@ export default ((opts?: Options) => {
         <hr class="footer-hr"></hr>
         <p style="display: flex; gap: 10px; align-items: center;">
           <a href="https://github.com/lukas-rku/uni">
-            <img src="https://img.shields.io/github/last-commit/lukas-rku/uni?label=Last%20Update&color=8556cc" alt="GitHub Last Commit Badge" />
+            <img src="https://img.shields.io/github/last-commit/lukas-rku/uni?label=Last%20Update&color=8556cc&style=for-the-badge&labelColor=393639" alt="GitHub Last Commit Badge" />
           </a>
           <a href="https://quartz.jzhao.xyz/">
-            <img src="https://img.shields.io/badge/Made_using-Quartz-8556cc" alt="Made using Quartz Badge" />
+            <img src="https://img.shields.io/badge/Made_using-Quartz-8556cc?style=for-the-badge&labelColor=393639" alt="Made using Quartz Badge" />
           </a>
           <a href="https://github.com/lukas-rku/uni">
-            <img src="https://img.shields.io/badge/GitHub-Repository-8556cc" alt="GitHub Repository Badge" />
+            <img src="https://img.shields.io/badge/GitHub-Repository-8556cc?style=for-the-badge&labelColor=393639" alt="GitHub Repository Badge" />
           </a>
         </p>
       </footer>

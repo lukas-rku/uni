@@ -27,7 +27,6 @@ public class MyLinkedList<T> implements List<T> {
 }
 ```
 So würde man eine `LinkedList` erstellen. Diese muss auf den `head`, also auf das erste Listenelement zeigen. 
-
 ## Durchlaufen einer `LinkedList`
 Für das Durchlaufen einer `LinkedList` benötigt man einen sogenannten `Pointer`, welcher auf das aktuelle Listenelement zeigt. Dies ist Vergleichbar mit dem `Index` eines `Arrays`. Dieser besitzt auch den Typ der Listenelemente, da er ja nacheinander auf diese verweisen soll.
 ```java
