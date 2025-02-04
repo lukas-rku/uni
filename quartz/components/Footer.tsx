@@ -8,22 +8,20 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-    const year = new Date().getFullYear()
-    const links = opts?.links ?? []
+  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+        <p style="display: flex; gap: 10px; align-items: center;">
+          <a href="https://github.com/lukas-rku/uni">
+            <img src="https://img.shields.io/github/last-commit/lukas-rku/uni?label=Last%20Update&color=8556cc" alt="GitHub Last Commit Badge" />
+          </a>
+          <a href="https://quartz.jzhao.xyz/">
+            <img src="https://img.shields.io/badge/Made_using-Quartz-8556cc" alt="Made using Quartz Badge" />
+          </a>
+          <a href="https://github.com/lukas-rku/uni">
+            <img src="https://img.shields.io/badge/GitHub-Repository-8556cc" alt="GitHub Repository Badge" />
+          </a>
         </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
       </footer>
     )
   }
@@ -31,3 +29,5 @@ export default ((opts?: Options) => {
   Footer.css = style
   return Footer
 }) satisfies QuartzComponentConstructor
+
+
