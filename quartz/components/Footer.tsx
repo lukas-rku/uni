@@ -11,6 +11,7 @@ export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
+        <hr class="footer-hr"></hr>
         <p style="display: flex; gap: 10px; align-items: center;">
           <a href="https://github.com/lukas-rku/uni">
             <img src="https://img.shields.io/github/last-commit/lukas-rku/uni?label=Last%20Update&color=8556cc" alt="GitHub Last Commit Badge" />

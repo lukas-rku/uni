@@ -3,6 +3,18 @@
 // put your custom CSS here!
 /* General and default image blending */
 
+.footer-hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 0rem;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+
 .theme-dark img {
     margin-left: auto;
     margin-right: auto;
