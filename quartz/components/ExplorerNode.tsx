@@ -163,18 +163,15 @@ type ExplorerNodeProps = {
 }
 
 export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodeProps) {
-  // Get options
   const folderBehavior = opts.folderClickBehavior
   const isDefaultOpen = opts.folderDefaultState === "open"
 
-  // Calculate current folderPath
   const folderPath = node.name !== "" ? joinSegments(fullPath ?? "", node.name) : ""
   const href = resolveRelative(fileData.slug!, folderPath as SimpleSlug) + "/"
 
   return (
     <>
       {node.file ? (
-        // Single file node
         <li key={node.file.slug}>
           <a href={resolveRelative(fileData.slug!, node.file.slug!)} data-for={node.file.slug}>
             {node.displayName}
@@ -183,9 +180,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
       ) : (
         <li>
           {node.name !== "" && (
-            // Node with entire folder
-            // Render svg button + folder name, then children
-            <div class="folder-container">
+            <div className="folder-container">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
@@ -196,32 +191,29 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="folder-icon"
+                className="folder-icon"
               >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
-              {/* render <a> tag if folderBehavior is "link", otherwise render <button> with collapse click event */}
               <div key={node.name} data-folderpath={folderPath}>
                 {folderBehavior === "link" ? (
-                  <a href={href} data-for={node.name} class="folder-title">
+                  <a href={href} data-for={node.name} className="folder-title">
                     {node.displayName}
                   </a>
                 ) : (
-                  <button class="folder-button">
-                    <span class="folder-title">{node.displayName}</span>
+                  <button className="folder-button">
+                    <span className="folder-title">{node.displayName}</span>
                   </button>
                 )}
               </div>
             </div>
           )}
-          {/* Recursively render children of folder */}
-          <div class={`folder-outer ${node.depth === 0 || isDefaultOpen ? "open" : ""}`}>
+          <div className={`folder-outer ${node.depth === 0 || isDefaultOpen ? "open" : ""}`}>
             <ul
-              // Inline style for left folder paddings
               style={{
                 paddingLeft: node.name !== "" ? "1.4rem" : "0",
               }}
-              class="content"
+              className="content"
               data-folderul={folderPath}
             >
               {node.children.map((childNode, i) => (

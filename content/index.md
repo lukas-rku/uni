@@ -5,8 +5,6 @@ draft: false
 date: 2025-01-30
 image: og-image.png
 ---
-
----
 ## Mathematik 1
 - Vektorräume und lineare Abbildungen
 	- [[Untervektorräume]]
@@ -27,7 +25,6 @@ image: og-image.png
 	- [[Spann]]
 	- [[Basiswechsel|Basiswechsel]]
 	- [[Lineare Unabhängigkeit, Erzeugungssysteme und Basen|Lineare Unabhängigkeit, Erzeugungssysteme und Basen]]
----
 ## Funktionale und objektorientierte Programmierung
 -  Generics
 	- [[Generische Klassen]]

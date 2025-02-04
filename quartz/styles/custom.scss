@@ -14,6 +14,26 @@ footer p {
   margin-top: 0;
 }
 
+.folder-container {
+  display: flex;
+  align-items: center;  /* Align SVG and text */
+  height: auto;  /* Allow the container height to adjust to content */
+}
+
+.folder-icon {
+  width: 12px;   /* Fixed width for the SVG */
+  height: 12px;  /* Fixed height for the SVG */
+  margin-right: 8px;  /* Space between SVG and text */
+  flex-shrink: 0;  /* Prevent shrinking */
+}
+
+.folder-title {
+  flex-grow: 1;    /* Allow the title to grow and take available space */
+  padding: 0px 0;  /* Vertical padding to ensure text isn't cut off */
+  white-space: normal; /* Allow text to wrap if needed */
+  overflow: hidden;   /* Prevent text overflow */
+  text-overflow: ellipsis;  /* Optional: Add ellipsis if the text is too long */
+}
 
 .theme-dark img {
     margin-left: auto;

@@ -42,7 +42,7 @@ button#explorer {
   & .fold {
     margin-left: 0.5rem;
     transition: transform 0.3s ease;
-    opacity: 0.8;
+    opacity: 0;
   }
 
   &.collapsed .fold {
@@ -154,6 +154,7 @@ svg {
 }
 
 .folder-icon {
+  opacity: 1;
   margin-right: 5px;
   color: var(--secondary);
   cursor: pointer;
