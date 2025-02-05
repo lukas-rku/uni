@@ -65,7 +65,6 @@ button#explorer {
 }
 
 #explorer-content {
-  list-style: none;
   overflow: hidden;
   overflow-y: auto;
   max-height: 100%;
@@ -100,6 +99,15 @@ button#explorer {
   > #explorer-ul {
     max-height: none;
   }
+}
+
+.folder-outer.open li:not(:has(ul)) {
+  list-style: disc;
+}
+
+
+.overflow::-webkit-scrollbar {
+  width: 0;
 }
 
 svg {
