@@ -2,9 +2,8 @@
 title: (In)korrektheit auf den einzelnen Abstraktionsebenen
 description: Lernzettel - funktionale und objektorientierte Programmierung
 draft: false
-date: 2025-02-03
+date: 2025-02-04
 tags:
- - incomplete
 ---
 ## Die Abstraktionsebenen
 Bei der Entwicklung von Software sind fünf verschiedene Abstraktionsebenen wichtig, von denen man auf die Programmieraufgabe blicken kann. Im Folgenden wird betrachtet, welche typischen Fehler häufig gemacht werden.
@@ -115,6 +114,46 @@ variable-declaration ::= <<type-name>> <<var-list>>
 var-list             ::= <<var-decl>> | <<var-decl>> , <<var-list>>
 var-decl             ::= <<identifier>> | <<identifier>> = <<expr-statement>>
 ```
+
 ### Semantische Ebene
+Syntaxfehler findet und behandelt der Compiler. Semantikfehler findet dieser in der Regel aber nicht, sondern wirken sich erst zur Laufzeit aus. Konkret heißt das, dass eine `RuntimeException` geworfen wird. Wird diese nicht gefangen, bricht das Programm ab %%Link RuntimeExceptions%%
+```java
+int x = 0;
+int y = 1 / x;
+```
+Ein beliebtes Beispiel ist die Division durch `0`. In einfachen Situationen wie hier findet der Compiler diese Fehler üblicherweise. In komplexeren Situationen, wenn beispielsweise der Nutzer eine `0` für `x` wählen kann, tritt der Fehler erst zur Laufzeit auf. Daher rechnet man diesen Fehler weiterhin zu den semantischen.
+```java
+int[] a = new int[10];
+a[0] = 2;
+a[-3] = 6;
+a[2012] = 11;
+```
+Ein weiterer beliebter Semantikfehler ist der falsche Arrayindex.  Die zweite Zeile wird problemlos ausgeführt. Die dritte und vierte allerdings nicht, da sie zu einer `ArrayIndexOutOfBoundsException` führt.
+```java
+String str = null;
+int len = str.length();
+```
+Ein drittes Beispiel ist der Zugriff auf ein nichtexistierendes Objekt. So wird die Variable vom Typ `String` zwar eingerichtet, aber nicht mit einem `String`-Objekt verbunden. Da kein `String`-Objekt existiert, ist der Zugriff auf die `String`-Länge ein semantischer Fehler. Hier wird eine `NullPointerException` geworfen.
+```java
+int n;
+n = true;
+
+class X{...} //besitzt nicht Methode m
+X a = new X();
+X.m();
+```
+Typfehler gehören weder zur Syntax noch zur Semantik im engeren Sinne. Sie sind keine syntaktischen Fehler, weil diese nur Verstöße gegen kontextfreie Regeln betreffen, die bei Typfehlern nicht verletzt werden. In stark typisierten Sprachen wie Java werden Typfehler vom Compiler erkannt, nicht zur Laufzeit, und sind daher auch keine klassischen semantischen Fehler. Im engeren Sinn passen Typfehler nicht in die fünf Abstraktionsebenen, die in diesem Kontext behandelt werden.
+
+Die **Syntax** regelt, ob der Quelltext formal korrekt ist und setzt eine gültige lexikalische Ebene voraus. Sie prüft nur, ob die Struktur des Programms korrekt ist, nicht jedoch die Bedeutung der verwendeten Konstrukte. Die **Semantik** hingegen beschreibt, was ein korrektes Programm tatsächlich ausführt, also seine Bedeutung und Wirkung.
 ### Logische Ebene
+Logische Fehler sind Umsetzungsfehler. Man weiß, was das Programm eigentlich tun soll, aber durch einen Denkfehler beim Programmieren macht das Programm etwas anderes. Hier gibt es auch wieder sehr beliebte Fehler. 
+![[1_inverted.png]]
+Ein anschauliches Beispiel ist der sogenannte "off-by-one error". Hier wird dieses an einem Pixelraster eines Bildschirms erklärt. Nun ist die Frage, wie breit das Fenster in der Mitte ist. Die spontane Antwort ist $r-l$. Allerdings wird man feststellen, dass man sich bei der Antwort um genau eins vertut. Das Fenster ist tatsächlich $r-l+1$ breit.
+
+Ein weiteres Problem könnte auch das Folgende sein: Sagen wir man hat sieben `Arrays` der Länge `8`. Nun befüllt man diese mit den Wochentagen auf Englisch. Für sechs von den sieben Tagen funktioniert das auch wunderbar. Am Mittwoch stürzt das Programm allerdings jede Woche ab: `Wednesday` besitzt neun Buchstaben. In der Theorie ist das Problem ganz einfach zu verstehen, allerdings ist es in der Praxis erstaunlich schwer die Quelle des Crashes zu finden. Zum einen muss man erst einmal darauf kommen, dass das Program nur Mittwochs abstürzt. Wenn die interne Fehlermeldung dem Endanwender nicht vom Programm angezeigt wird und der Fehlerfall immer erst am nächsten Tag weiterverfolgt wird, findet man den Fehler nie – und weiß noch nicht einmal warum.
 ### Spezifikatorische Ebene
+Logikfehler waren Fehler bei der Übertragung von eigentlich richtigen Gedanken in die Progammiersprache. Spezifikatorische Fehler sind die, bei denen allein schon der Gedanke falsch ist.
+
+Das wohl bekannteste Beispiel für Fehler der spezifikatorischen Ebene ist das Jahr-2000-Problem: In vielen Programmen wurden Jahreszahlen mit zwei statt vier Ziffern kodiert um Speicherplatz zu sparen. Bei der Jahrtausendwende war das dann natürlich ein Problem.
+
+Ein weiteres tragisches Beispiel ist, dass ein Flugzeug nach der Landung nicht rechtzeitig abbremsen konnte, weil die Schubumkehr für einige Sekunden blockiert blieb. Der Algorithmus zur Freigabe der Schubumkehr überprüfte den Bodenkontakt der Räder anhand von Druck- und Drehgeschwindigkeitswerten. Aufgrund ungünstiger Witterungsbedingungen erkannte das System jedoch nicht, dass die Räder bereits auf dem Boden waren. Dadurch verzögerte sich die Aktivierung der Schubumkehr, sodass das Flugzeug über die Landebahn hinaus in einen Erdwall rollte.

@@ -15,9 +15,8 @@ public class ListItem <T> {
 ListItem<T> head = new ListItem<T>();
 head.next = new ListItem<T>();
 ```
-Ein Objekt von der Klasse `ListItem` hat ein Attribut von Klasse `ListItem`. Das heißt, dass die Listenelemente miteinander verkettet sind.
-![[Pasted image 20250131113743.png#d0]]
-![[Pasted image 20250131114410.png#d0]]
+Ein Objekt von der Klasse `ListItem` hat ein Attribut von Klasse `ListItem`. Das heißt, dass die Listenelemente miteinander verkettet sind.![[Pasted image 20250131113743.png]]
+![[Pasted image 20250131114410.png]]
 Man kann nahezu unbegrenzt viele Listenelemente miteinander verketten. Genau das ist das Konzept einer `LinkedList`. 
 ## `LinkedList` erstellen
 ```java
