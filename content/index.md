@@ -60,3 +60,6 @@ image: og-image.png
 	- [[Files]]
 - Korrekte Software
 	- [[(In)korrektheit auf den Abstraktionsebenen]]
+	- [[Korrektheit von Software]]
+	- [[Korrektheit von Klassen]]
+	- [[Korrektheit von Subroutinen]]
