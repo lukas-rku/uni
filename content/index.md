@@ -63,3 +63,6 @@ image: og-image.png
 	- [[Korrektheit von Software]]
 	- [[Korrektheit von Klassen]]
 	- [[Korrektheit von Subroutinen]]
+	- [[Korrektheit von rekursiven Subroutinen]]
+	- [[Korrektheit innerhalb von Subroutinen]]
+%%ich mach die sortier und such algorithmen getrennt, die sind im vorlesungsfoliensatz 12 eigentlich bei den korrektheit innerhalb von subroutinen dabei%%
