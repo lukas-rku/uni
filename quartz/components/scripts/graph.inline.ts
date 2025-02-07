@@ -1,4 +1,4 @@
-"../../plugins/emitters/contentIndex"
+import type { ContentDetails } from "../../plugins/emitters/contentIndex"
 import {
   SimulationNodeDatum,
   SimulationLinkDatum,
@@ -8,6 +8,7 @@ import {
   forceCenter,
   forceLink,
   forceCollide,
+  forceRadial,
   zoomIdentity,
   select,
   drag,
@@ -87,6 +88,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     removeTags,
     showTags,
     focusOnHover,
+    enableRadial,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
@@ -124,9 +126,9 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
 
   const neighbourhood = new Set<SimpleSlug>()
   const wl: (SimpleSlug | "__SENTINEL")[] = [slug, "__SENTINEL"]
-  if (depth >= 0) {
+  if (depth >= 0 && slug !== "/") {
+    // Compute the neighbourhood as before
     while (depth >= 0 && wl.length > 0) {
-      // compute neighbours
       const cur = wl.shift()!
       if (cur === "__SENTINEL") {
         depth--
@@ -139,9 +141,10 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       }
     }
   } else {
+    // Fall back to the global graph (display all nodes)
     validLinks.forEach((id) => neighbourhood.add(id))
     if (showTags) tags.forEach((tag) => neighbourhood.add(tag))
-  }
+  }  
 
   const nodes = [...neighbourhood].map((url) => {
     const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
@@ -161,6 +164,9 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       })),
   }
 
+  const width = graph.offsetWidth
+  const height = Math.max(graph.offsetHeight, 250)
+
   // we virtualize the simulation and use pixi to actually render it
   const simulation: Simulation<NodeData, LinkData> = forceSimulation<NodeData>(graphData.nodes)
     .force("charge", forceManyBody().strength(-100 * repelForce))
@@ -168,8 +174,12 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     .force("link", forceLink(graphData.links).distance(linkDistance))
     .force("collide", forceCollide<NodeData>((n) => nodeRadius(n)).iterations(3))
 
-  const width = graph.offsetWidth
-  const height = Math.max(graph.offsetHeight, 250)
+  if (enableRadial || slug == "/")
+    simulation.force("radial", forceRadial(0, 0, 0).strength(0.2))
+
+  // We want a fluid simulation so we keep the alpha target low at all times.
+  simulation.alphaTarget(0.025)
+
 
   // precompute style prop strings as pixi doesn't support css variables
   const cssVars = [
@@ -200,18 +210,14 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     const isCurrent = d.id === slug;
     if (isCurrent) {
       return computedStyleMap["--current"];
-    } else if (/^Mathematik-1\//.test(d.id)) { 
-      // Check if d.id starts with "Mathematik-1/"
-      return computedStyleMap["--m1"]; 
-    } else if (/^Funktionale-und-objektorientierte-Programmierung\//.test(d.id)) { 
-      // Check if d.id starts with "Mathematik-1/"
-      return computedStyleMap["--fop"]; 
-    } else if (/^Digitaltechnik\//.test(d.id)) { 
-      // Check if d.id starts with "Mathematik-1/"
-      return computedStyleMap["--dt"]; 
-    } else if (/^Automaten-formale-Sprache-und-Entscheidbarkeit\//.test(d.id)) { 
-      // Check if d.id starts with "Mathematik-1/"
-      return computedStyleMap["--afe"]; 
+    } else if (/^Mathematik-1\//.test(d.id)) {
+      return computedStyleMap["--m1"];
+    } else if (/^Funktionale-und-objektorientierte-Programmierung\//.test(d.id)) {
+      return computedStyleMap["--fop"];
+    } else if (/^Digitaltechnik\//.test(d.id)) {
+      return computedStyleMap["--dt"];
+    } else if (/^Endliche-Automaten,-formale-Sprachen-und-Entscheidbarkeit\//.test(d.id)) {
+      return computedStyleMap["--afe"];
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"];
     } else {
@@ -223,7 +229,11 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    if (/^\/$/.test(d.id)) {
+      return (1.5 + Math.sqrt(numLinks)) * 1.25
+    } else {
+      return 1.5 + Math.sqrt(numLinks * 0.25)
+    }
   }
 
   let hoveredNodeId: string | null = null
@@ -467,7 +477,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
         .container(() => app.canvas)
         .subject(() => graphData.nodes.find((n) => n.id === hoveredNodeId))
         .on("start", function dragstarted(event) {
-          if (!event.active) simulation.alphaTarget(1).restart()
+          if (!event.active)
           event.subject.fx = event.subject.x
           event.subject.fy = event.subject.y
           event.subject.__initialDragPos = {
@@ -485,7 +495,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
           event.subject.fy = initPos.y + (event.y - initPos.y) / currentTransform.k
         })
         .on("end", function dragended(event) {
-          if (!event.active) simulation.alphaTarget(0)
+          if (!event.active)
           event.subject.fx = null
           event.subject.fy = null
           dragging = false
@@ -507,6 +517,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     }
   }
 
+
   if (enableZoom) {
     select<HTMLCanvasElement, NodeData>(app.canvas).call(
       zoom<HTMLCanvasElement, NodeData>()
@@ -521,8 +532,8 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
           stage.position.set(transform.x, transform.y)
 
           // zoom adjusts opacity of labels too
-          const scale = transform.k * opacityScale
-          let scaleOpacity = Math.max((scale - 1) / 3.75, 0)
+          const scaleVal = transform.k * opacityScale
+          let scaleOpacity = Math.max((scaleVal - 1) / 3.75, 0)
           const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
 
           for (const label of labelsContainer.children) {
@@ -537,10 +548,10 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
   function animate(time: number) {
     for (const n of nodeRenderData) {
       const { x, y } = n.simulationData
-      if (!x || !y) continue
-      n.gfx.position.set(x + width / 2, y + height / 2)
+      if (x == null || y == null) continue
+      n.gfx.position.set(x + width/2, y + height/2)
       if (n.label) {
-        n.label.position.set(x + width / 2, y + height / 2)
+        n.label.position.set(x + width/2, y + height/2)
       }
     }
 
@@ -550,7 +561,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
       l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
       l.gfx
         .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 1, color: l.color })
+        .stroke({ alpha: l.alpha, width: 0.5, color: l.color })
     }
 
     tweens.forEach((t) => t.update(time))
