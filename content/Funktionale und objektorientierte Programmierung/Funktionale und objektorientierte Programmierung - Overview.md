@@ -11,6 +11,7 @@ tags:
 	- [[Funktionale Abstraktion]]
 	- [[Deklaratives Programmieren]]
 	- [[Basics von Racket]]
+	- [[Objektmodell]]
 	- [[Definitionen verstecken]]
 	- [[Rekursion in Java]]
 	- [[Rekursion in Racket]]
