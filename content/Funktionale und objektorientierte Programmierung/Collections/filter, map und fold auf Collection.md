@@ -35,7 +35,7 @@ public static <T> Collection<T> filter(Collection<T> coll, Predicate<T> pred) {
 	return result;
 }
 ```
-Hier eine Variation von `filter`, wo, wie bei Racket, die Eingabeliste nicht geändert, sondern stattdessen eine neue erstellt wird. Daher wird eine `Collection` vom selben generischen Typ zurückgeliefert. Erwähnenswert ist hier die [[Kurzform for-Schleife bei Collections|Kurzform]] der `for`-Schleife
+Hier eine Variation von `filter`, wo, wie bei `Racket`, die Eingabeliste nicht geändert, sondern stattdessen eine neue erstellt wird. Daher wird eine `Collection` vom selben generischen Typ zurückgeliefert. Erwähnenswert ist hier die [[Kurzform for-Schleife bei Collections|Kurzform]] der `for`-Schleife
 ## `map`
 ```java
 public static <X,Y> Collection<Y> map(Collection<X> coll, Function<X,Y> fct) {
