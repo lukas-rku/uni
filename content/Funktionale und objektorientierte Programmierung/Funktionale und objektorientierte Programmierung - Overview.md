@@ -5,6 +5,15 @@ draft: false
 date: 2025-02-06
 tags:
 ---
+## Funktionales Programmieren
+1. Grundlagen
+	- [[Objektorientierte Abstraktion]]
+	- [[Funktionale Abstraktion]]
+	- [[Deklaratives Programmieren]]
+	- [[Basics von Racket]]
+	- [[Definitionen verstecken]]
+	- [[Rekursion in Java]]
+	- [[Rekursion in Racket]]
 ## Generics
 - [[Generische Klassen]]
 - [[Generische Methoden]]
