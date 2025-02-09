@@ -13,7 +13,7 @@ tags:
 - komplexe Zahlen, ...
 
 - dezimal: $5347 = 7\cdot 1 + 4\cdot 10 +3 \cdot 100 + 5 \cdot 1000 = 5347_{10}$ 
-- binär: $1101_2 = 1 \cdot 2^0+0\cdot2^1+1\cdot2^2+1\cdot2^3 = 13_{10}$
+- [[Zahlensysteme#Definition vorzeichenloses Stellenwertsystem|binär]]: $1101_2 = 1 \cdot 2^0+0\cdot2^1+1\cdot2^2+1\cdot2^3 = 13_{10}$
 - hexadezimal: $\text{1F3A}_{16}=10\cdot 16^0+3\cdot16^1+15\cdot16^2+1\cdot16^3=7994_{10}$
 
 ## Häufig verwendete Basen
