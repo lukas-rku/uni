@@ -5,13 +5,26 @@ draft: false
 date: 2025-02-09
 tags:
 ---
+## Logik & Gatter
 - [[Logikgatter]]
-- [[Bitbreitenerweiterung]]
-- [[Addition von Binärzahlen]]
-- [[Umrechnen von Zahlensystemen]]
-- [[SystemVerilog]]
-- [[Zahlensysteme]]
-- [[Darstellung von natürlichen Zahlen]]
-- [[Bits und Bytes]]
-- [[Hardwarebeschreibungssprachen]]
+- [[Spannungen als Logikpegel]]
+- [[Feldeffekt-Transistoren]]
+- [[CMOS-Gatter]]
+- [[Leistungsaufnahme]]
+- [[Boole'sche Gleichungen]]
+- [[Kombinatorische Logik]]
+
+## SystemVerilog
 - [[Sinn eines Schichtenmodells]]
+- [[Hardwarebeschreibungssprachen]]
+- [[Zahlen in SystemVerilog]]
+- [[Syntax in SystemVerilog]]
+- [[Modulhierarchie in SystemVerilog]]
+
+## Zahlensysteme
+- [[Bits und Bytes]]
+- [[Darstellung von natürlichen Zahlen]]
+- [[Zahlensysteme]]
+- [[Umrechnen von Zahlensystemen]]
+- [[Addition von Binärzahlen]]
+- [[Bitbreitenerweiterung]]

@@ -1,5 +1,5 @@
 ---
-title: SystemVerilog
+title: Zahlen in SystemVerilog
 description: Lernzettel - Digitaltechnik
 draft: false
 date: 2025-02-09
