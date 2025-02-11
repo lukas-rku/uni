@@ -71,55 +71,58 @@ convert_special_markers(destination)
 print("All H1 headers removed and special markers converted.")
 
 # -------------------------------
-# New code to count words in Markdown files and update the TypeScript file
+# New code: Count Markdown files & words and update the TypeScript file
 # -------------------------------
 
-# Function to count words in all Markdown (.md) files in a given directory (including subfolders)
-def count_words_in_md(directory):
+# Function to count both the number of Markdown files and the total words within them.
+def count_md_files_and_words(directory):
+    md_count = 0
     total_words = 0
-    # Walk through all subdirectories and files
     for root, _, files in os.walk(directory):
         for file in files:
             if file.endswith(".md"):
+                md_count += 1
                 file_path = os.path.join(root, file)
                 with open(file_path, "r", encoding="utf-8") as f:
                     content = f.read()
-                    # Use regex to match word characters; adjust the regex if needed
+                    # Count words using a regex (adjust regex if needed)
                     words = re.findall(r'\w+', content)
                     total_words += len(words)
-    return total_words
+    return md_count, total_words
 
-# Function to update the word counter in a TypeScript file that contains the Shields badge.
-# This function looks for a URL segment like "badge/Words-100-8556cc" and replaces "100" with the new count.
-def update_ts_word_counter(ts_file, new_count):
+# Function to update the badge text in a TypeScript file that contains the Shields badge.
+# The function looks for a URL segment like "badge/Notes | Words-29021-8556cc"
+# and replaces the portion between "badge/" and "-8556cc" with the new text in the format "[md_count] | [total_words]".
+def update_ts_word_counter(ts_file, md_count, total_words):
     with open(ts_file, "r", encoding="utf-8") as f:
         ts_content = f.read()
-    # Regex pattern: (badge/Words-)(some digits)(-8556cc)
-    # Using \g<1> and \g<2> prevents ambiguity in group references.
+    # Pattern: (badge/Words-)(any characters except dash)+(-8556cc)
+    # This works if the current badge text is just a number or in a similar format.
+    new_badge_text = f"{md_count} | {total_words}"
     new_ts_content = re.sub(
-        r'(badge/Words-)\d+(-8556cc)',
-        r'\g<1>' + str(new_count) + r'\g<2>',
+        r'(https://img\.shields\.io/badge/Notes\ \|\ Words-).*(-8556cc)',
+        r'\g<1>' + new_badge_text + r'\2',
         ts_content
     )
     with open(ts_file, "w", encoding="utf-8") as f:
         f.write(new_ts_content)
-    print(f"Updated word count in '{ts_file}' to {new_count}.")
+    print(f"Updated badge text in '{ts_file}' to '{new_badge_text}'.")
+
+
 
 # === USER-SPECIFIED PATHS ===
-# Path containing the markdown files you want to count.
-# Change this to the directory you want to scan for .md files.
+# Path containing the markdown files you want to scan.
 word_count_source = r"E:\System Folders\Documents\Informatik Studium\Informatik Studium\Lernzettel"  # e.g., r"C:\Users\Lukas\Documents\Markdowns"
 
 # Path to the TypeScript file that contains the Shields badge.
-# Change this to the full path of the TS/TSX file that you want to update.
 ts_file_path = r"C:\Users\Lukas\quartz\quartz\components\Footer.tsx"  # e.g., r"C:\Users\Lukas\quartz\src\components\footer.tsx"
 
-# Count the total number of words in the specified Markdown directory
-total_words = count_words_in_md(word_count_source)
-print("Total word count in markdown files:", total_words)
+# Count the number of Markdown files and the total number of words.
+md_files_count, total_words = count_md_files_and_words(word_count_source)
+print(f"Found {md_files_count} Markdown files with a total of {total_words} words.")
 
-# Update the TypeScript file with the new word count
-update_ts_word_counter(ts_file_path, total_words)
+# Update the TypeScript file with the new badge text.
+update_ts_word_counter(ts_file_path, md_files_count, total_words)
 
 # Run npx quartz sync
 subprocess.run("npx quartz sync", shell=True)

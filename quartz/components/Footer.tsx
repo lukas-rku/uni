@@ -23,7 +23,7 @@ export default ((opts?: Options) => {
             <img src="https://img.shields.io/badge/GitHub-Repository-8556cc?style=for-the-badge&labelColor=393639" alt="GitHub Repository Badge" />
           </a>
           <a href="https://github.com/lukas-rku/uni">
-            <img src="https://img.shields.io/badge/Words-29021-8556cc?style=for-the-badge&labelColor=393639" alt="Number of Words" />
+            <img src="https://img.shields.io/badge/Notes | Words-111 | 29021-8556cc?style=for-the-badge&labelColor=393639" alt="Number of Words" />
           </a>
         </p>
       </footer>
