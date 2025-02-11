@@ -16,20 +16,21 @@ tags:
 - Das pull-u==p== Netz wird aus ==p==Mos-Transistoren gebaut
 - Das pull-dow==n== Netz wird aus ==n==Mos-Transistoren gebaut
 
-## Beispiel anhand von [[Logikgatter#NOT $ mathbb{B} rightarrow mathbb{B}$|NOT]]
+## Beispiel anhand von [[Logikgatter#NOT|NOT]]
 ![[Screenshot 2025-02-10 144639_inverted.png]]
-## Beispiel anhand von [[Logikgatter#NAND $ mathbb{B} 2 rightarrow mathbb{B}$|NAND]]
+## Beispiel anhand von [[Logikgatter#NAND|NAND]]
 ![[Screenshot 2025-02-10 150342_inverted.png]]
 ## Struktur eines CMOS Gatters
 Immer wenn man "[[CMOS-Gatter#Kombinieren komplementärer Transistoren|oben]]" pMOS Transistoren parallel schaltet, muss man unten die nMOS Transistoren in Serie schalten.
 - pMOS Parallelschaltung $\leftrightarrow$ nMOS Serienschaltung
 - pMOS Serienschaltung $\leftrightarrow$ nMOS Parallelschaltung
 
-## Aufbau eines [[Logikgatter#NOR $ mathbb{B} 2 rightarrow mathbb{B}$|NOR]]-Gatters mit drei Eingängen
+## Aufbau eines [[Logikgatter#NOR|NOR]]-Gatters mit drei Eingängen
 ![[Screenshot 2025-02-10 151448_inverted.png]]
 Problem bei hoher Anzahl an Transistoren (hier als Veranschaulichung übertrieben):
 - Bei Stromverlust bei jedem Transistor leidet die Ausgangsspannung
-- Irgendwann kippt die Ausgangsspannung unter die [[Spannungen als Logikpegel|akzeptierte]] Spannung $V_{IH}$
+- Irgendwann kippt die Ausgangsspannung unter die [[Spannungen als Logikpegel|akzeptierte]
+- ] Spannung $V_{IH}$
 
 ## Pseudo-nMOS Gatter
 - Ersetzen des Pull-Up Netzes durch schwachen, immer eingeschalteten pMOS

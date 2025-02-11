@@ -1,5 +1,5 @@
 ---
-title: # Endliche Automaten, formale Sprachen und Entscheidbarkeit - Overview
+title: Endliche Automaten, formale Sprachen und Entscheidbarkeit - Overview
 description: 
 draft: true
 date: 2025-02-06

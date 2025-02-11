@@ -7,7 +7,7 @@ tags:
 ---
 ## Transistoren
 - [[Logikgatter|Logikgatter]] werden üblicherweise aus Transistoren aufgebaut
-	- heute überwiegend Feldeffekttransistor (FET, "Fiel Effect Transistor")
+	- heute überwiegend Feldeffekttransistor (FET, "Field Effect Transistor")
 - Transistoren sind spannungsgesteuerte Schalter
 	- zwei Anschlüsse (Source $s$ & Drain $d$), werden je nach Spannung am dritten Eingang (Gate $g$) verbunden oder getrennt
 ![[Screenshot 2025-02-10 135931_inverted.png]]

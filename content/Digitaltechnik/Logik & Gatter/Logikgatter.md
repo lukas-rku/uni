@@ -15,23 +15,32 @@ tags:
 - Charakterisierung durch Wahrheitstabellen
 
 ## Logikgatter: Übersicht
-### BUF: $\mathbb{B} \rightarrow \mathbb{B}$
+### BUF
+$\mathbb{B} \rightarrow \mathbb{B}$
 ![[buf_inverted.png]]
-### NOT: $\mathbb{B} \rightarrow \mathbb{B}$
+### NOT
+$\mathbb{B} \rightarrow \mathbb{B}$
 ![[not_inverted.png]]
-### AND: $\mathbb{B}^2 \rightarrow \mathbb{B}$
+### AND
+$\mathbb{B}^2 \rightarrow \mathbb{B}$
 ![[and_inverted.png]]
-### OR: $\mathbb{B}^2 \rightarrow \mathbb{B}$
+### OR
+$\mathbb{B}^2 \rightarrow \mathbb{B}$
 ![[or_inverted.png]]
-### XOR: $\mathbb{B}^2 \rightarrow \mathbb{B}$
+### XOR
+$\mathbb{B}^2 \rightarrow \mathbb{B}$
 ![[xor_inverted.png]]
-### NAND: $\mathbb{B}^2 \rightarrow \mathbb{B}$
+### NAND
+$\mathbb{B}^2 \rightarrow \mathbb{B}$
 ![[nand_inverted.png]]
-### NOR: $\mathbb{B}^2 \rightarrow \mathbb{B}$
+### NOR
+$\mathbb{B}^2 \rightarrow \mathbb{B}$
 ![[nor_inverted.png]]
-### XNOR: $\mathbb{B}^2 \rightarrow \mathbb{B}$
+### XNOR
+$\mathbb{B}^2 \rightarrow \mathbb{B}$
 ![[xnor_inverted.png]]
-### XOR3: $\mathbb{B}^3 \rightarrow \mathbb{B}$
+### XOR3
+$\mathbb{B}^3 \rightarrow \mathbb{B}$
 ![[xor3_inverted.png]]
 ### XOR mit mehreren Eingängen
 - "repräsentiert" die Anzahl der Einsen an Eingängen (modulo 2)
