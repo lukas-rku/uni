@@ -6,7 +6,7 @@ date: 2025-02-11
 tags:
 ---
 ## Zweistufige Logik
-![[Pasted image 20250211150829.png]]
+![[../../assets/Pasted image 20250211150829.png]]
 - direkte (konstruktive) Umsetzung der disjunktiven Normalform (DNF)
 	- Eingangsliterale: ein Inverter pro Variable (falls benötigt)
 	- Minterme: je ein "breites"[[Logikgatter#AND|AND]] Gatter and passende Literale anschließen
@@ -16,7 +16,7 @@ tags:
 		- [[Logikgatter#AND|AND2]]
 		- [[Logikgatter#OR|OR2]]
 		- [[Logikgatter#NOT|NOT]]
-![[Pasted image 20250211150934.png]]
+![[../../assets/Pasted image 20250211150934.png]]
 ## Konventionen für lesbare Schaltpläne
 - Eingänge links (oder oben)
 - Ausgänge rechts (oder unten)
@@ -25,7 +25,7 @@ tags:
 	- keine Schrägen oder Kurven
 - 3-armige Kreuzungen gelten implizit als verbunden
 - 4-armige Kreuzungen gelten nur bei Markierung (Punkt) als verbunden
-![[Pasted image 20250211151313.png]]
+![[../../assets/Pasted image 20250211151313.png]]
 ## Weitere kombinatorische Grundelemente
 - zweistufige Logik
 	- sehr mächtig

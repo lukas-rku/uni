@@ -23,7 +23,7 @@ $$
 - für 4 bit Addiere gilt zum Beispiel: $11+6=1$, da $10001=0001$
 
 ## Addition von [[Zahlensysteme|Zweierkomplement]]
-Binärzahlen des Zweierkomplements sind kompatibel mit der [[Addition von Binärzahlen#Schriftliche Addition von Zahlensysteme Definition vorzeichenloses Stellenwertsystem vorzeichenlosen Binärzahlen|schriftlichen Addition]]:
+Binärzahlen des Zweierkomplements sind kompatibel mit der [[#Schriftliche Addition von Zahlensysteme Definition vorzeichenloses Stellenwertsystem vorzeichenlosen Binärzahlen|schriftlichen Addition]]:
 $$
 \begin{align*}
 &\text{Summand: }&1010 &= -6_{10}\\
@@ -35,4 +35,4 @@ $$
 &&=0_{10}
 \end{align*}
 $$
-Hier erfreut man sich tatsächlich über den [[Addition von Binärzahlen#Addition mit Überlauf|Überlauf]]. Wichtig ist allerdings, dass beide Zahlen die gleich Breite benötigen.
+Hier erfreut man sich tatsächlich über den [[#Addition mit Überlauf|Überlauf]]. Wichtig ist allerdings, dass beide Zahlen die gleich Breite benötigen.

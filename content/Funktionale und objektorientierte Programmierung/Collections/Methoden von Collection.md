@@ -16,7 +16,7 @@ containsAll
 clear
 remove
 ```
-Hier eine Auswahl von Methoden im Interface [[Collection|Collection]].
+Hier eine Auswahl von Methoden im Interface [[Collection]].
 ## `add`
 ```java
 boolean add(T elemt) throws 

@@ -15,7 +15,7 @@ $$
 Dabei ist $E_\lambda$ der Eigenraum zu $\lambda$, und $\lambda$ ist ein [[Eigenwerte und Eigenvektoren#Definition Eigenwerte|Eigenwert]] von $A$.
 
 ### Eigenschaften:
-- Jeder Eigenraum $E_\lambda$ ist ein [[Untervektorräume#Definition|Untervektorraum]] von $\mathbb{R}^n$.
+- Jeder Eigenraum $E_\lambda$ ist ein [[../Vektorräume und lineare Abbildungen/Untervektorräume#Definition|Untervektorraum]] von $\mathbb{R}^n$.
 - Der Eigenraum zu einem Eigenwert $\lambda$ besteht aus den Lösungen des homogenen LGS:
 
 $$

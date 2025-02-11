@@ -166,7 +166,7 @@ Und ebenso analog zum Bedingungsoperator in `Java` ist, dass es – im Gegensatz
 
 (if (symbol=? last-name 'Max) (...) (...))
 ```
-Ein Symbol hat für `Racket`, im Gegensatz zu [[Basics von Racket#Identifier|Identifier]], keinen Aussagewert. Ein Identifier hingegen ist eine Funktion oder eine Konstante.
+Ein Symbol hat für `Racket`, im Gegensatz zu [[#Identifier|Identifier]], keinen Aussagewert. Ein Identifier hingegen ist eine Funktion oder eine Konstante.
 
 Das Gleichheitszeichen und das Fragezeichen gehören zum Namen der vordefinierten booleschen Funktion `symbol=?`. Sie ist auf Symbole anwendbar und liefert genau dann `true`, wenn erstens beide Parameter Symbole sind und zweitens die beiden Symbole zudem gleich sind. Viel mehr als Test auf Gleichheit oder Ungleichheit kann man mit Symbolen auch nicht machen, da Symbole für Racket eben keine Bedeutung haben.
 
@@ -180,7 +180,7 @@ Das Gleichheitszeichen und das Fragezeichen gehören zum Namen der vordefinierte
 ```
 Tatsächlich wird in `Racket` erst zur Laufzeit geprüft, ob die Typen der Operanden einer Operation zu dieser Operation passen. Und wenn das nicht der Fall ist, bricht DrRacket die Ausführung des Programms mit einer entsprechenden Fehlermeldung ab.
 
-Für den Nutzer einer Funktion sollte man daher unbedingt etwas tun, was in `Java` nicht nötig ist: In einem Kommentar [[Korrektheit von Subroutinen#Subroutinen als "Vertrag"|vertraglich]] zusichern, welche Typen die Parameter haben und welcher Typ zurückgeliefert wird.
+Für den Nutzer einer Funktion sollte man daher unbedingt etwas tun, was in `Java` nicht nötig ist: In einem Kommentar [[../../Korrekte Software/Korrektheit von Subroutinen#Subroutinen als "Vertrag"|vertraglich]] zusichern, welche Typen die Parameter haben und welcher Typ zurückgeliefert wird.
 
 Dieses Beispiel folgt der allgemeinen Konvention für `Racket`: eine Aufzählung der Parametertypen in der selben Reihenfolge, wie sie bei der Definition und beim Aufruf der Funktion auftreten, nach einem Pfeil dann der Rückgabetyp, das alles wieder ohne Kommas oder ähnliches.
 

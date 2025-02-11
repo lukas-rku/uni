@@ -15,8 +15,8 @@ public class ListItem <T> {
 ListItem<T> head = new ListItem<T>();
 head.next = new ListItem<T>();
 ```
-Ein Objekt von der Klasse `ListItem` hat ein Attribut von Klasse `ListItem`. Das heißt, dass die Listenelemente miteinander verkettet sind.![[Pasted image 20250131113743.png]]
-![[Pasted image 20250131114410.png]]
+Ein Objekt von der Klasse `ListItem` hat ein Attribut von Klasse `ListItem`. Das heißt, dass die Listenelemente miteinander verkettet sind.![[../../assets/Pasted image 20250131113743.png]]
+![[../../assets/Pasted image 20250131114410.png]]
 Man kann nahezu unbegrenzt viele Listenelemente miteinander verketten. Genau das ist das Konzept einer `LinkedList`. 
 ## `LinkedList` erstellen
 ```java
@@ -61,7 +61,7 @@ public boolean contains(Object obj) {
 	return false;
 }
 ```
-Hier eine Implementation von `processAll`, die im Prinzip auch schon für `List` und sogar schon für [[Collection|Collection]] definiert ist. In dieser Variation wird die Liste nicht unbedingt bis zum Ende durchlaufen. Sobald das gesuchte Element mithilfe von `Object.equals` gefunden wurde, liefert die Methode true zurück.
+Hier eine Implementation von `processAll`, die im Prinzip auch schon für `List` und sogar schon für [[Collection]] definiert ist. In dieser Variation wird die Liste nicht unbedingt bis zum Ende durchlaufen. Sobald das gesuchte Element mithilfe von `Object.equals` gefunden wurde, liefert die Methode true zurück.
 
 Erwähnenswert ist, dass unter anderem die Methode `equals` aus `Objects` in dem Package `java.util` enthalten ist. Diese behandelt Sonderfälle wie beispielsweise `obj == null` und/oder `p.key == null`.
 ## Hinzufügen von Elementen zu einer `LinkedList`
@@ -129,7 +129,7 @@ Der Fall, dass das zu entfernende Objekt der `head` der Liste ist, wird daraufhi
 
 Andererseits wird die Liste durchlaufen, bis `obj` gefunden wurde. Um dies zu entfernen wird `next` des vorherigen Elements auf das nachfolgende gesetzt. Zu beachten ist allerdings, dass die `for`-Schleife leicht modifiziert ist. So wird in der Schleife nach `p.next != null` und nicht `p != null` gesucht. Das versichert, dass der Fall, dass `p.next` kein Listenelement mehr hat abgedeckt ist.
 
-*Wichtig ist, dass andere Programmiersprachen wie bspw. C keinen sogenannten [[Garbage Collector|Garbage Collector]] hat. Das heißt, dass dort die zu entfernenden Elemente sorgfältiger behandelt werden müssen. So muss man bespielsweise manuell den Speicherplatz wieder freigeben, bevor er nicht mehr erreichbar ist.*
+*Wichtig ist, dass andere Programmiersprachen wie bspw. C keinen sogenannten [[Garbage Collector]] hat. Das heißt, dass dort die zu entfernenden Elemente sorgfältiger behandelt werden müssen. So muss man bespielsweise manuell den Speicherplatz wieder freigeben, bevor er nicht mehr erreichbar ist.*
 ## Eine passende Iterator-Klasse zu `LinkedList`
 ```java
 class MyLinkedListIterator<T> implements Iterator<T> {

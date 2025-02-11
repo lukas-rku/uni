@@ -39,34 +39,34 @@ tags:
 | T12: $\overline{A \cdot B \cdot C \cdot \dots} = \overline{A} + \overline{B} + \overline{C} + \dots$ | T12': $\overline{A + B + C + \dots} = \overline{A} \cdot \overline{B} \cdot \overline{C} \cdot \dots$ | De Morgan       |
 ## Theorome grafisch
 ### T1: Neutralität von 1 und 0
-![[Pasted image 20250211135256.png]]
+![[../../assets/Pasted image 20250211135256.png]]
 ### T2: Extremum von 0 und 1
-![[Pasted image 20250211135355.png]]
+![[../../assets/Pasted image 20250211135355.png]]
 ### T3: Idempotenz
-![[Pasted image 20250211135411.png]]
+![[../../assets/Pasted image 20250211135411.png]]
 ### T4: Involution
-![[Pasted image 20250211135434.png]]
+![[../../assets/Pasted image 20250211135434.png]]
 ### T5: Komplement
-![[Pasted image 20250211135449.png]]
+![[../../assets/Pasted image 20250211135449.png]]
 ### T6: Kommutativität
-![[Pasted image 20250211135516.png]]
+![[../../assets/Pasted image 20250211135516.png]]
 ### T7: Assoziativität
-![[Pasted image 20250211135534.png]]
+![[../../assets/Pasted image 20250211135534.png]]
 ### T8: Distributivität
-![[Pasted image 20250211135554.png]]
+![[../../assets/Pasted image 20250211135554.png]]
 ### T9: Absorption
-![[Pasted image 20250211135610.png]]
+![[../../assets/Pasted image 20250211135610.png]]
 ### T10: Zusammenfassen
-![[Pasted image 20250211135633.png]]
+![[../../assets/Pasted image 20250211135633.png]]
 ### T11: Konsensus
-![[Pasted image 20250211135652.png]]
+![[../../assets/Pasted image 20250211135652.png]]
 ### T12: De Morgan
-![[Pasted image 20250211135707.png]]
+![[../../assets/Pasted image 20250211135707.png]]
 ## Beweis für Theoreme
 - Methode 1: Überprüfen aller Möglichkeiten
 - Methode 2: Gleichung durch Axiome und andere Theoreme vereinfachen
 
-## Beweis für [[Boole'sche Algebra#T8 Distributivität|Distributivität]] (T8)
+## Beweis für [[#T8 Distributivität|Distributivität]] (T8)
 Durch Überprüfen aller Möglichkeiten
 
 | $A$ | $B$ | $C$ | $B + C$ | ==$A(B + C)$== | $AB$ | $AC$ | ==$AB + AC$== |
@@ -79,25 +79,25 @@ Durch Überprüfen aller Möglichkeiten
 | $1$ | $0$ | $1$ | $1$     | $1$            | $0$  | $1$  | $1$           |
 | $1$ | $1$ | $0$ | $1$     | $1$            | $1$  | $0$  | $1$           |
 | $1$ | $1$ | $1$ | $1$     | $1$            | $1$  | $1$  | $1$           |
-## Beweis für [[Boole'sche Algebra#T9 Absorption|Absorption]] (T9)
+## Beweis für [[#T9 Absorption|Absorption]] (T9)
 Durch Anwendung von Axiomen und Theoremen
 
-| $A\cdot(A+B)$          | [[Boole'sche Algebra#T8 Distributivität\|Distributivität]]     |
+| $A\cdot(A+B)$          | [[#T8 Distributivität\|Distributivität]]     |
 | ---------------------- | -------------------------------------------------------------- |
-| $A\cdot A + A \cdot B$ | [[Boole'sche Algebra#T3 Idempotenz\|Idempotenz]]               |
-| $A+A\cdot B$           | [[Boole'sche Algebra#T1 Neutralität von 1 und 0\|Neutralität]] |
-| $A\cdot 1 + A \cdot B$ | [[Boole'sche Algebra#T8 Distributivität\|Distributivität]]     |
-| $A\cdot(1+B)$          | [[Boole'sche Algebra#T2 Extremum von 0 und 1\|Extremum]]       |
-| $A\cdot1$              | [[Boole'sche Algebra#T1 Neutralität von 1 und 0\|Neutralität]] |
+| $A\cdot A + A \cdot B$ | [[#T3 Idempotenz\|Idempotenz]]               |
+| $A+A\cdot B$           | [[#T1 Neutralität von 1 und 0\|Neutralität]] |
+| $A\cdot 1 + A \cdot B$ | [[#T8 Distributivität\|Distributivität]]     |
+| $A\cdot(1+B)$          | [[#T2 Extremum von 0 und 1\|Extremum]]       |
+| $A\cdot1$              | [[#T1 Neutralität von 1 und 0\|Neutralität]] |
 | A                      | $\text{q.e.d}$                                                 |
-## Beweis für [[Boole'sche Algebra#T11 Konsensus|Konsensus]] (T11)
+## Beweis für [[#T11 Konsensus|Konsensus]] (T11)
 Durch Anwendung von Axiomen und Theoremen
-![[Pasted image 20250211143113.png]]
+![[../../assets/Pasted image 20250211143113.png]]
 
 ## Logikminimierung
 - Gatter-Realisierung per DNF kann sehr aufwändig sein
 - Logik (Anzahl Literale und Operatoren) minimieren
-![[Screenshot 2025-02-11 143355_inverted.png]]
+![[../../assets/Screenshot 2025-02-11 143355_inverted.png]]
 ## Anwendung von Axiome und Theoreme für Logikminimierung
 $$
 \begin{align*}
@@ -111,5 +111,5 @@ Y&=\overline A \overline B \overline C = \overline A \overline B C+A \overline B
 $$
 - weitere Vereinfachungen möglich?
 	- $Y=\overline B+AC$
-![[Screenshot 2025-02-11 144314_inverted.png]]
+![[../../assets/Screenshot 2025-02-11 144314_inverted.png]]
 - Systematik notwendig, um minimale Ausdrücke zu erkennen/finden

@@ -22,7 +22,7 @@ public class A <T extends X> {
 	}
 }
 ```
-Der [[Typparameter|Typparameter]] `T` wird durch das Schlüsselwort `extends` eingeschränkt, sodass `T` entweder gleich `X` oder direkt oder indirekt von `X` abgeleitet sein darf, also auch `Y` und `Z`. Der Typparameter `T` ist also durch die Klasse `X` *beschränkt*. Anstelle eine Klasse kann auch ein Interface einen Typparameter beschränken.
+Der [[Typparameter]] `T` wird durch das Schlüsselwort `extends` eingeschränkt, sodass `T` entweder gleich `X` oder direkt oder indirekt von `X` abgeleitet sein darf, also auch `Y` und `Z`. Der Typparameter `T` ist also durch die Klasse `X` *beschränkt*. Anstelle eine Klasse kann auch ein Interface einen Typparameter beschränken.
 
 Gezeigt hier ist nur die Einschränkung mit einem einzigen Typparameter. Allerdings funktioniert das Konzept auch bei Klassen mit mehreren Typparameter und auch bei [[Generische Methoden|generischen Methoden]].
 

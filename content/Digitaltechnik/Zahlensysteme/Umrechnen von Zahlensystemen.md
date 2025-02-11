@@ -59,7 +59,7 @@ $$
 \end{align*}
 $$
 *Von unten nach oben ist Methode 2 = Methode 1. Der Rest von $1:2$ ist $1$.*
-![[Screenshot 2025-02-09 144628_inverted.png]]
+![[../../assets/Screenshot 2025-02-09 144628_inverted.png]]
 *Von dezimal zu hexadezimal ist der Weg über binär am besten.*
 
 ## Binärdarstellung im [[Zahlensysteme#Definition Zweierkomplement|Zweierkomplement]]

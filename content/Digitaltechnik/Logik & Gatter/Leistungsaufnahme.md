@@ -29,4 +29,4 @@ tags:
 	- $P_{\text{dynamic}}=I\cdot V=(C\cdot V_{DD}\cdot\frac{f}{2})(V_{DD})=\frac{1}{2}C\cdot V^2_{DD}\cdot f$
 
 ## Beispielrechnung Leistungsaufnahme
-![[Screenshot 2025-02-10 154141_inverted.png]]
+![[../../assets/Screenshot 2025-02-10 154141_inverted.png]]

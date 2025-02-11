@@ -19,7 +19,7 @@ A^{-1}A\vec x&=A^{-1}\vec v\\
 \end{align*}
 $$
 ### Bedingung
-Die [[Determinante#Definition|Determinante]] von $A$ darf nicht null sein, da die [[Lineare Abbildungen#Definition|lineare Abbildung]] sonst den [[Bild, Urbild und Kern einer linearen Abbildung#Definition Bild|Bildraum]] verändert:
+Die [[../Determinante/Determinante#Definition|Determinante]] von $A$ darf nicht null sein, da die [[Lineare Abbildungen#Definition|lineare Abbildung]] sonst den [[Bild, Urbild und Kern einer linearen Abbildung#Definition Bild|Bildraum]] verändert:
 $$
 \text{det}(A)\not=0
 $$

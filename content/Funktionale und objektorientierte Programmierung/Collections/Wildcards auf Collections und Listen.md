@@ -15,7 +15,7 @@ public double getVaule(List<? extends Number> list, int index) {
 	return list.get(index).doubleValue();
 }
 ```
-In beiden Fällen wird jeweils nur eine Methode aufgerufen, die lesend auf [[Collection|Collection]] bzw. `List` zugreift. Insbesondere im zweiten Fall sieht man, dass das [[Wildcards#Beispiel mit Wildcard|extends]] im Typparameter der `List` kein Problem bei In-Parametern darstellt. Alle Klassen, die vom Typparameter Number direkt oder indirekt abgeleitet sind, haben die Methode `doubleValue`.
+In beiden Fällen wird jeweils nur eine Methode aufgerufen, die lesend auf [[Collection]] bzw. `List` zugreift. Insbesondere im zweiten Fall sieht man, dass das [[../Generics/Wildcards#Beispiel mit Wildcard|extends]] im Typparameter der `List` kein Problem bei In-Parametern darstellt. Alle Klassen, die vom Typparameter Number direkt oder indirekt abgeleitet sind, haben die Methode `doubleValue`.
 ## Wildcards mit `extends Object` auf `Collection` und `List`
 ```java
 public Object getVaule(List<?> list, int index) {
@@ -32,4 +32,4 @@ public void addSqrt2(List<? super Double> list, int index) {
 	list.add(index, Math.sqrt(2));
 }
 ```
-In diesem Beispiel wird nun bei `List` und `Collection` ein Out-Parameter genutzt, d.h. anstatt von `extends` muss [[Wildcards#`super` mit Wildcards|super]] genutzt werden. In beiden Methoden wird nur schreibend auf die `Collection` bzw. `List` zugegriffen. Einen lesenden Zugriff gibt es hier nicht.
+In diesem Beispiel wird nun bei `List` und `Collection` ein Out-Parameter genutzt, d.h. anstatt von `extends` muss [[../Generics/Wildcards#`super` mit Wildcards|super]] genutzt werden. In beiden Methoden wird nur schreibend auf die `Collection` bzw. `List` zugegriffen. Einen lesenden Zugriff gibt es hier nicht.

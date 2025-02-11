@@ -16,4 +16,4 @@ tags:
 ## SystemVerilog
 - auf Verilog HDL basierende Hardware Description and Verification Language (HDVL)
 - 2002 erschienen
-- Verilog und SystemVerilog sind neben VHDL die am meisten verwendeten HDLs der Branche
+- Verilog und SystemVerilog sind neben VHDL die am meisten verwendeten HDLs der Branche 

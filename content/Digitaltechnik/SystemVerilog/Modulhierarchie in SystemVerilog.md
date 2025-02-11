@@ -29,7 +29,7 @@ module nand3(input logic d, e, f, output logic w);
 	inv inverter(s, w);          // Instanz von inv namens inverter
 endmodule
 ```
-![[Screenshot 2025-02-10 171420_inverted.png]]
+![[../../assets/Screenshot 2025-02-10 171420_inverted.png]]
 
 ## Portzuweisung nach Position oder Namen
 *`nand3_named.sv`*

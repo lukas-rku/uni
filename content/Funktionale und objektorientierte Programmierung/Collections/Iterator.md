@@ -15,7 +15,7 @@ while(it1.hasNext()) {
 	System.out.print(it1.next().doubleValue());
 }
 ```
-Zu jeder Klasse, die das Interface [[Collection|Collection]] implementiert, gibt es eine eigene `Iterator`-Klasse, die das generische Interface `Iterator` implementiert. [[Collection#Anwendungsbeispiel von `Collection` packages|Schon früher]] hatten wir `c1` vom Typ `ArrayList`, `c2` vom Typ `HashSet` und `c3` vom Typ `Vector` beispielhaft eingerichtet. 
+Zu jeder Klasse, die das Interface [[Collection]] implementiert, gibt es eine eigene `Iterator`-Klasse, die das generische Interface `Iterator` implementiert. [[Collection#Anwendungsbeispiel von `Collection` packages|Schon früher]] hatten wir `c1` vom Typ `ArrayList`, `c2` vom Typ `HashSet` und `c3` vom Typ `Vector` beispielhaft eingerichtet. 
 
 Das Interface `Collection` erbt die Methode `iterator` von `Iterable`, die ein `Iterator`-Objekt zurückgibt. Jede Klasse, die `Iterable` implementiert, liefert ihre eigene `Iterator`-Klasse, aber durch das Interface `Iterator` können alle Iteratoren einheitlich genutzt werden. Die Unterschiede stecken im dynamischen Typ.
 

@@ -10,7 +10,7 @@ tags:
 //Objectmethode von Collection<T>:
 boolean removelf(Predicate<? super T> pred)
 ```
-Für `filter` hat das Interface [[Collection|Collection]] tatsächlich schon eine Methode namens `removelf`. Alle Methoden die das `Predicate` werden aus der Collection entfernt. Allerdings entspricht dies nicht genau der `filter`-Operation in Racket, da dort eine neue Liste zurückgegeben und die Alte nicht verändert wird. Hingegen gibt `removelf` nur zurück, ob ein Element entfernt wurde oder nicht.
+Für `filter` hat das Interface [[Collection]] tatsächlich schon eine Methode namens `removelf`. Alle Methoden die das `Predicate` werden aus der Collection entfernt. Allerdings entspricht dies nicht genau der `filter`-Operation in Racket, da dort eine neue Liste zurückgegeben und die Alte nicht verändert wird. Hingegen gibt `removelf` nur zurück, ob ein Element entfernt wurde oder nicht.
 
 ```java
 public static<T> void filter(Collection<T> coll, Predicate<T> pred) {
@@ -22,7 +22,7 @@ public static<T> void filter(Collection<T> coll, Predicate<T> pred) {
 	}
 }
 ```
-Hier eine mögliche Implementation der `filter`-Methode mittels [[Iterator|Iterator]], die wie `removelf` die Eingabeliste selbst verändert, allerdings ohne zurückgeben ob diese geändert wurde. Wichtig ist allerdings die implementation von `it.remove()` wie [[Iterator#^e08a09|hier]] schon beschrieben.
+Hier eine mögliche Implementation der `filter`-Methode mittels [[Iterator]], die wie `removelf` die Eingabeliste selbst verändert, allerdings ohne zurückgeben ob diese geändert wurde. Wichtig ist allerdings die implementation von `it.remove()` wie [[Iterator#^e08a09|hier]] schon beschrieben.
 
 ```java
 public static <T> Collection<T> filter(Collection<T> coll, Predicate<T> pred) {

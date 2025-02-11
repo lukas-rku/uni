@@ -52,7 +52,7 @@ Nach Vorbedingung ist sicher, dass zwischen `a` und `b` mindestens eine Nullstel
 
 Man hätte sich einen rekursiven Schritt sparen können, denn tatsächlich ist der Rückgabewert höchstens $\frac{\text{epsilon}}{2}$ von einer Nullstelle entfernt.
 ## Theoretische Einordnung
-Hinter der Korrektheit einer rekursiven Subroutine steckt grundsätzlich immer das aus der Mathematik bekannte Beweisprinzip der [[Vollständige Induktion|vollständigen Induktion]].
+Hinter der Korrektheit einer rekursiven Subroutine steckt grundsätzlich immer das aus der Mathematik bekannte Beweisprinzip der [[../../Mathematik 1/Lineare Gleichungssysteme/Vollständige Induktion|vollständigen Induktion]].
 - Induktionsbehauptung: Für Induktionsparameter = Problemgröße $h\ge0$ erfüllt die Subroutine ihren Vertrag.
 - Induktionsanfang, $h = 0$: Die Anweisungen im Rekursionsabbruch sorgen dafür, dass der Vertrag erfüllt ist.
 - Induktionsvoraussetzung für $h > 0$: Der Vertrag gelte für $0,1,...,h-1$

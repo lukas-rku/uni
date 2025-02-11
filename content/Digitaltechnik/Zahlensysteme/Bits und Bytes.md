@@ -5,7 +5,7 @@ draft: false
 date: 2025-02-09
 tags:
 ---
-## Binärsystem als [[Sinn eines Schichtenmodells#Disziplin|Digitale Disziplin]]
+## Binärsystem als [[../SystemVerilog/Sinn eines Schichtenmodells#Disziplin|Digitale Disziplin]]
 - Beschränkung auf nur zwei unterschiedliche Werte
 - Können unterschiedlich heißen
 	- 1, WAHR, TRUE, HIGH, ...

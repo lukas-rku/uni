@@ -4,13 +4,12 @@ description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-22
 tags:
-  - missingImage
 ---
 [YouTube Link](https://www.youtube.com/watch?v=MD7U_vYaX58)
 1. Induktionsanfang
 	- Eine Formel oder Behauptung
 	- hier $1+2+3+...+n=\frac{\left(n+1\right)\cdot n}{2}$
-	 ![[Pasted image 20250106142103.png]]
+	 ![[../../assets/Pasted image 20250106142103.png]]
 	- Man weiß nicht ob das auch für $n = 4$, $n = 5$ usw. gilt.
 	- Man muss aber nur für eine Zahl zeigen, dass das stimmt
 2. Induktionsschritt

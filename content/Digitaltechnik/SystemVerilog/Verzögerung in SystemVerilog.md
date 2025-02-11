@@ -21,5 +21,5 @@ module example_delay(input logic a,b,c output logic y);
 	assign #2 n3 = b & c;    // Verzögerung 2 Einheiten
 	assign #1 y = n2 | n3;   // Verzögerung 1 Einheit
 ```
-![[Pasted image 20250211181125.png]]
-Nach 3 Nanosekunden tritt ein [[Zeitverhalten#Störimpulse (Glitches)|Störimpuls]], ein Glitch, auf, da sich $n_2$ nicht zeitgleich mit $n_3$ ändert, sondern leicht verzögert.
+![[../../assets/Pasted image 20250211181125.png]]
+Nach 3 Nanosekunden tritt ein [[../Logik & Gatter/Zeitverhalten#Störimpulse (Glitches)|Störimpuls]], ein Glitch, auf, da sich $n_2$ nicht zeitgleich mit $n_3$ ändert, sondern leicht verzögert.

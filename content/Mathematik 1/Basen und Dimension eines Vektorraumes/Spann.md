@@ -6,7 +6,7 @@ date: 2025-01-28
 tags:
 ---
 ## Definition
-- Der **Spann** ist ein [[Untervektorräume#Definition|Untervektorraum]] von $V$, der alle Linearkombinationen der gegebenen Vektoren enthält.
+- Der **Spann** ist ein [[../Vektorräume und lineare Abbildungen/Untervektorräume#Definition|Untervektorraum]] von $V$, der alle Linearkombinationen der gegebenen Vektoren enthält.
 - **Notation:** $\text{span}(M)$ oder $\langle M \rangle_K$, wobei $M$ eine Teilmenge des Vektorraums $V$ ist, die aus Vektoren $v_1, v_2, \ldots, v_k$ besteht:  
   $\text{span}(\{v_1, \dots, v_k\})$
 

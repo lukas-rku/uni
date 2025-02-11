@@ -6,7 +6,7 @@ date: 2025-02-01
 tags:
 ---
 ## Streams als generische Schnittstelle
-Das Interface %%Link Interface%% `Stream` ist generisch und befindet sich in dem Package %%link package%% `java.util.stream`. `Streams` bilden eine einheitliche Schnittstelle für [[Eigene LinkedList-Klasse|Listen]], Arrays%%Link arrays%%, Dateien sowie unendliche Sequenzen von Werten des Typparameters.
+Das Interface %%Link Interface%% `Stream` ist generisch und befindet sich in dem Package %%link package%% `java.util.stream`. `Streams` bilden eine einheitliche Schnittstelle für [[../Collections/Eigene LinkedList-Klasse|Listen]], Arrays%%Link arrays%%, Dateien sowie unendliche Sequenzen von Werten des Typparameters.
 ## Ein Stream generiert aus Listen
 ```java
 List<Number> list = new LinkedList<Number>();
@@ -23,9 +23,9 @@ Die Methode `stream` der generischen Klasse `List` liefert eine `Stream` vom sel
 
 Das Interface `Stream` hat unter anderem die Methode `filter`. Sie liefert einen `Stream` vom selben generischen Typ und benutzt das Predicate%%link Predicate%% `myPred` um dieses zu filtern. Das heißt, dass `stream2` die Elemente von `stream1` enthält, die das `Predicate` bestehen, bei denen `myPred` also `true` zurück gibt.
 
-Die Methode `map` ist nun auch selber generisch, sie hat also neben dem Typparameter der Klasse `Stream` noch einen weiteren Typparameter. Die Rückgabe ist ein `Stream` des zweiten Typparameters. Das heißt, dass sie Potenziell unterschiediche Typen haben könnten. In diesem Beispiel ist dies aber nicht der Fall, da sowohl `stream2` und `stream2` vom Typ `Number` sind. So sind auch beide Typparameter von `myFct` %%link Function%% instanziiert mit `Number`. Die Methode `map` ist vom verhalten her völlig analog zu [[filter, map und fold auf Collection#`map`|map]].
+Die Methode `map` ist nun auch selber generisch, sie hat also neben dem Typparameter der Klasse `Stream` noch einen weiteren Typparameter. Die Rückgabe ist ein `Stream` des zweiten Typparameters. Das heißt, dass sie Potenziell unterschiediche Typen haben könnten. In diesem Beispiel ist dies aber nicht der Fall, da sowohl `stream2` und `stream2` vom Typ `Number` sind. So sind auch beide Typparameter von `myFct` %%link Function%% instanziiert mit `Number`. Die Methode `map` ist vom verhalten her völlig analog zu [[../Collections/filter, map und fold auf Collection#`map`|map]].
 
-Die Methode `max` liefert keinen `Stream` mehr, sondern nur noch ein Element des `Streams` die die Methode aufgerufen hat. Der formale Parameter von Methode `max` ist Comparator%%link Comparator%% des generischen Typ des `Streams`. Der Parameter entscheidet, welches Element von `Stream` zurückgeliefert wird, nämlich das, was bei der implementierten Vergleichsfunktion allen anderen Elementen des `Streams` nachfolgend ist. `max` liefert nicht das Element selbst, sondern der Verweis auf ein [[Optional|Optional]]-Objekt, für den Fall, dass Stream, und somit auch `Optional` leer ist.
+Die Methode `max` liefert keinen `Stream` mehr, sondern nur noch ein Element des `Streams` die die Methode aufgerufen hat. Der formale Parameter von Methode `max` ist Comparator%%link Comparator%% des generischen Typ des `Streams`. Der Parameter entscheidet, welches Element von `Stream` zurückgeliefert wird, nämlich das, was bei der implementierten Vergleichsfunktion allen anderen Elementen des `Streams` nachfolgend ist. `max` liefert nicht das Element selbst, sondern der Verweis auf ein [[Optional]]-Objekt, für den Fall, dass Stream, und somit auch `Optional` leer ist.
 
 Methoden der Klasse `Stream`, die wie `filter` und `map` wieder einen `Stream` zurückliefern, nennt man `intermediate operations`, also so etwas wie Zwischenoperationen.
 
@@ -68,7 +68,7 @@ while(iter.hasNext()) {
 	doSomethingWith(n);
 }
 ```
-So wie [[Collection|Collections]] bieten Streams auch mithilfe eines [[Iterator|Iterators]] die Möglichkeit des elementweisen Durchlaufen. Lediglich die Generierung unterscheidet sich, je nachdem, worauf der `Iterator` laufen soll.
+So wie [[../Collections/Collection|Collections]] bieten Streams auch mithilfe eines [[../Collections/Iterator|Iterators]] die Möglichkeit des elementweisen Durchlaufen. Lediglich die Generierung unterscheidet sich, je nachdem, worauf der `Iterator` laufen soll.
 ## Arrays aus Streams
 ```java
 List<String> list = stream.collect(Collectors.toList());

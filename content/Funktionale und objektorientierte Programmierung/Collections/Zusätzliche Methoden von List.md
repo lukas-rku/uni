@@ -12,7 +12,7 @@ set
 add
 get
 ```
-Das Interface `List` erweitert das Interface [[Collection|Collection]], ebenfalls mit dem Elementtyp als Typparameter. In einer `List` existiert zum gegenteil zu einer `Collection` (welche in der Mathematik mit einer Menge vergleichbar ist) eine Reihenfolge. Die `List` enthält wie ein Array auch ein Index welche die Position eines Zeigers beschreibt.
+Das Interface `List` erweitert das Interface [[Collection]], ebenfalls mit dem Elementtyp als Typparameter. In einer `List` existiert zum gegenteil zu einer `Collection` (welche in der Mathematik mit einer Menge vergleichbar ist) eine Reihenfolge. Die `List` enthält wie ein Array auch ein Index welche die Position eines Zeigers beschreibt.
 ## `indexOf`
 `indexOf` gibt selbstverständlicherweise den Index einer `List` zurück und wird mit einem Parameter vom Typ `Object` aufgerufen. Wenn die `List` das `Object` nicht enthält gibt sie für den Index `-1` zurück.
 ## `set`

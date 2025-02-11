@@ -28,7 +28,7 @@ public class StreamOfSineValuesIterator implements PrimitiveIterator.ofDouble{
 	}
 }
 ```
-An der [[Iterator|Iterator]]-Klasse lässt sich das Prinzip des unendlichen [[Streams|Streams]] sehr gut zeigen. Daher wird sich hier nicht die gesamte Klasse `StreamOfSineValues` angeschaut.
+An der [[../Collections/Iterator]]-Klasse lässt sich das Prinzip des unendlichen [[Streams]] sehr gut zeigen. Daher wird sich hier nicht die gesamte Klasse `StreamOfSineValues` angeschaut.
 
 Die `Iterator`-Klasse zu [[IntStreams, LongStreams und DoubleStreams|DoubleStream]] heißt `ofDouble` und ist in einem `Interface` namens `PrimitiveIterator` im Package `java.util`.
 

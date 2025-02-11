@@ -29,7 +29,7 @@ Wird `m(3)` aufgerufen, so erfolgt folgende Abfolge:
 5. Danach gibt jeder Rücksprung den jeweiligen Parameterwert erneut aus: zuerst 0, dann 1, anschließend 2 und schließlich 3.
 
 So entsteht die Ausgabereihenfolge: `3, 2, 1, 0, 0, 1, 2, 3.`
-![[2_inv.png]]
+![[../../../assets/2_inv.png]]
 Der Blick auf den Call-Stack zeigt, was dahintersteckt: In jedem Frame, am selben Offset von der Startadresse des jeweiligen Frames, ist ein Platz für den Parameter `n` reserviert. Der ist bei jedem rekursiven Aufruf ein anderer, nämlich immer um `1` kleiner. In jeder
 Bildschirmausgabe wird immer der Wert von `n` im obersten Frame genommen, also in dem Frame, auf dessen Anfangsadresse der Stack-Pointer momentan verweist.
 ## Rekursive Berechnung des Binomialkoeffizienten in Java

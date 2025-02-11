@@ -7,7 +7,7 @@ tags:
 ---
 ## Graphische Umformung von Schaltungen
 Nach [[Boole'sche Algebra#T12 De Morgan|De Morgan]] und [[Boole'sche Algebra#T4 Involution|Involution]]
-![[Pasted image 20250211144831.png]]
+![[../../assets/Pasted image 20250211144831.png]]
 ## Invertierungsblasen verschieben
 - über Gatter ([[Logikgatter#AND|AND]] / [[Logikgatter#OR|OR]] / [[Logikgatter#NOT|NOT]] / [[Logikgatter#BUF|BUF]]) hinweg
 	- vorwärts: Eingang $\rightarrow$ Ausgang
@@ -22,20 +22,20 @@ Nach [[Boole'sche Algebra#T12 De Morgan|De Morgan]] und [[Boole'sche Algebra#T4 
 - verbleibende Buffer (vorher Inverter) können entfernt werden
 
 ## Beispiel
-![[Pasted image 20250211145333.png]]
+![[../../assets/Pasted image 20250211145333.png]]
 - De Morgan über G3
 	- Blase am Ausgang $\rightarrow$ Blase an beiden Eingängen
 	- AND $\rightarrow$ OR
-![[Pasted image 20250211145440.png]]
+![[../../assets/Pasted image 20250211145440.png]]
 - Blasen entlang der Leitungen verschieben
 	- G3 $\rightarrow$ G1
 	- G3 $\rightarrow$ G2 (Doppelblase aufheben)
-![[Pasted image 20250211145526.png]]
+![[../../assets/Pasted image 20250211145526.png]]
 - De Morgan über G1
 	- Blasen an Ein- und Ausgängen invertieren
 	- OR $\rightarrow$ AND
 - Buffer G2 entfernen
-![[Pasted image 20250211145611.png]]
+![[../../assets/Pasted image 20250211145611.png]]
 - Zwei Inverter weniger
 
 ## Anwendungen

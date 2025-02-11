@@ -9,7 +9,7 @@ tags:
 - [[Boole'sche Algebra|Algebraisch]]
 	- Umformen nach [[Boole'sche Algebra#Axiome der boole'schen Algebra|Axiome]]/[[Boole'sche Algebra#Theoreme der boole'schen Algebra|Theoremen]]
 - Grafisch
-	- [[Karnaugh Diagramme|Karnaugh Diagramme]]
+	- [[Karnaugh Diagramme]]
 - Algorithmisch
 	- exakt: Quine-McCluskey
 	- heuristisch: Espresso
@@ -61,10 +61,10 @@ $\mathbb{B}^4\rightarrow\mathbb{B}^7$
 - Sieben unabhängig schaltbare Segmente $S_0,\dots,S_6$
 	$\Rightarrow$ jedes Segment nur für bestimmte Zeichen aktiv
 
-![[Screenshot 2025-02-11 164056_inverted.png]]
+![[../../assets/Screenshot 2025-02-11 164056_inverted.png]]
 ## 7-Segment Anzeige
 Wahrheitstabelle
-![[Pasted image 20250211164157.png]]
+![[../../assets/Pasted image 20250211164157.png]]
 ## 7-Segment Anzeige in Espresso
 Eingabedateien
 ```python

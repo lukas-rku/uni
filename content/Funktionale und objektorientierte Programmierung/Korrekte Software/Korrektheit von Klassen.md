@@ -17,11 +17,11 @@ Die Implementationsinvariante ist das Gegenstück zur Darstellungsinvariante, be
 **Darstellungsinvariante**: Ein Objekt von Klasse `Robot` repräsentiert zu jedem Zeitpunkt seiner Lebenszeit einen Roboter mit vier jederzeit veränderbaren Attributen: Zeile, Spalte, Richtung und Anzahl Münzen, sowie einem konstanten Attribut: der FopBot-World, zu der der Roboter gehört. ...
 
 **Implementationsinvariante**: abhängig von der tatsächlichen Implementation der Klasse Robot.
-## Beispiel anhand von [[Eigene LinkedList-Klasse|MyLinkedList]]
+## Beispiel anhand von [[../Collections/Eigene LinkedList-Klasse|MyLinkedList]]
 **Darstellungsinvariante**: Ein Objekt von `List` repräsentiert zu jedem Zeitpunkt seiner Lebenszeit eine geordnete Sequenz (die auch leer sein kann) seines generischen Elementtyps; die Positionen sind ab `0` aufsteigend; Suchen, Einfügen und Entfernen von Elementen kann zum Wurf einer `RuntimeException` führen; ... 
 
 **Implementationsinvariante** von MyLinkedList:
-![[Pasted image 20250131114410.png]]
+![[../../assets/Pasted image 20250131114410.png]]
 ## Ableitung von Klassen und Implementation von Interfaces
 Wenn eine Klasse von einer anderen abgeleitet wird oder ein Interface implementiert, muss die Darstellungsinvariante der Basisklasse in der neuen Klasse weiterhin gelten. Das bedeutet, dass alle Bedingungen und Regeln, die für die Darstellung der Basisklasse definiert wurden, auch von der abgeleiteten oder implementierenden Klasse eingehalten werden müssen. Gleichzeitig muss die Implementationsinvariante übernommen werden, soweit sie sich auf `protected`-Attribute der Basisklasse bezieht. Dabei gilt, dass bestehende Invarianten erweitert oder verfeinert werden dürfen, aber nichts zurückgenommen werden darf.
 

@@ -16,7 +16,7 @@ tags:
 	- Strukturbeschreibung: Wie ist die Schaltung aus (Sub-)Modulen aufgebaut?
 	- Verhaltensbeschreibung: Was tut die Schaltung
 - strukturelle Modul-Hierarchie mit Verhaltensbeschreibung auf unterster Ebene
-![[Screenshot 2025-02-10 164334_inverted.png]]
+![[../../assets/Screenshot 2025-02-10 164334_inverted.png]]
 ## Beispiel für Verhaltensbeschreibung
 ```verilog
 module example(input logic a, b, c, output logic y);
@@ -28,21 +28,21 @@ endmodule
 
 ^452699
 
-| Bezeichnung       | Beschreibung                                                                                                                                                                                                                                   |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `module`          | Beginn der Schnittstellenbeschreibung                                                                                                                                                                                                          |
-| `example`         | Modulname                                                                                                                                                                                                                                      |
-| `input`, `output` | Port-Richtung                                                                                                                                                                                                                                  |
-| `logic`           | Port-Datentyp                                                                                                                                                                                                                                  |
-| `a, b, c, y`      | Port-Namen                                                                                                                                                                                                                                     |
-| `assign`          | ([[Kombinatorische Logik\|kombinatorische]]) Signalzuweisung                                                                                                                                                                                   |
-| `~`, `&`, \|      | ([[Kombinatorische Logik\|kombinatorische]]) Operatoren ([[Logikgatter#NOT $ mathbb{B} rightarrow mathbb{B}$\|NOT]], [[Logikgatter#AND $ mathbb{B} 2 rightarrow mathbb{B}$\|AND]], [[Logikgatter#OR $ mathbb{B} 2 rightarrow mathbb{B}$\|OR]]) |
-| `endmodule`       | Ende der Schnittstellenbeschreibung                                                                                                                                                                                                            |
-*Man kann eine beliebige [[Kombinatorische Logik|kombinatorische Logik]] eins zu eins abtippen.*
+| Bezeichnung       | Beschreibung                                                                                                                                                                               |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `module`          | Beginn der Schnittstellenbeschreibung                                                                                                                                                      |
+| `example`         | Modulname                                                                                                                                                                                  |
+| `input`, `output` | Port-Richtung                                                                                                                                                                              |
+| `logic`           | Port-Datentyp                                                                                                                                                                              |
+| `a, b, c, y`      | Port-Namen                                                                                                                                                                                 |
+| `assign`          | ([[Kombinatorische Logik\|kombinatorische]]) Signalzuweisung                                                                                                                               |
+| `~`, `&`, \|      | ([[Kombinatorische Logik\|kombinatorische]]) Operatoren ([[../Logik & Gatter/Logikgatter#NOT\|NOT]], [[../Logik & Gatter/Logikgatter#AND\|AND]], [[../Logik & Gatter/Logikgatter#OR\|OR]]) |
+| `endmodule`       | Ende der Schnittstellenbeschreibung                                                                                                                                                        |
+*Man kann eine beliebige [[../Logik & Gatter/Kombinatorische Logik|kombinatorische Logik]] eins zu eins abtippen.*
 ## Simulation von Verhaltensbeschreibungen
 Plot mit Opensource Tools `Icarus Verilog` + `GTKWave`
-![[Screenshot 2025-02-10 165555_inverted.png]]
-Man kann sehen, dass die [[Boole'sche Gleichungen#Minterm|Minterme]] von [[Kombinatorische Logik in SystemVerilog#^452699|example]] bei der ersten, fünften und sechsten Zeiteinheit bei `y = 1` sind.
+![[../../assets/Screenshot 2025-02-10 165555_inverted.png]]
+Man kann sehen, dass die [[../Logik & Gatter/Boole'sche Gleichungen#Minterm|Minterme]] von [[#^452699|example]] bei der ersten, fünften und sechsten Zeiteinheit bei `y = 1` sind.
 ## Synthese von Verhaltensbeschreibung
 Plot mit Open-Source Tools `YoSyS` + `GraphViz`
-![[Screenshot 2025-02-10 170304_inverted.png]]
+![[../../assets/Screenshot 2025-02-10 170304_inverted.png]]

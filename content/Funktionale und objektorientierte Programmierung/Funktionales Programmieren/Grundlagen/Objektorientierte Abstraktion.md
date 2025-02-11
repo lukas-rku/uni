@@ -7,7 +7,7 @@ tags:
 ---
 ## Übersicht
 - Objekte / Klassen sind die zentralen Bausteine.
-	- Jede [[Korrektheit von Subroutinen|Subroutine]] gehört zu einer Klasse.
+	- Jede [[../../Korrekte Software/Korrektheit von Subroutinen|Subroutine]] gehört zu einer Klasse.
 	- Typischerweise Methode genannt statt Subroutine, Prozedur oder Funktion.
 - *Ein* Objekt hat einen momentanen Zustand.
 	- Ändert sich durch Schreibzugriffe auf seine Attribute und Aufrufe seiner Methoden.

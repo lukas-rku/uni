@@ -23,4 +23,4 @@ IntStream stream1 = new Random().ints();
 LongStream stream2 = new Random().longs();
 DoubleStream stream3 = new Random().doubles();
 ```
-`Random` hat schon je eine Methode für jede der drei [[IntStreams, LongStreams und DoubleStreams|spezialisierten]] `Stream`-Klassen. Alle drei Methoden liefern jeweils einen `Stream` zurück. Hier zeigt sich ein Vorteil von `Streams`: `Streams` können im Gegensatz zu Listen, Arrays und Dateien unendlich lang sein. Ein `Stream` von Zufallszahlen endet nie, und ein [[Iterator|Iterator]] darüber liefert stets `true` bei `hasNext`, egal wie viele Werte bereits entnommen wurden.
+`Random` hat schon je eine Methode für jede der drei [[IntStreams, LongStreams und DoubleStreams|spezialisierten]] `Stream`-Klassen. Alle drei Methoden liefern jeweils einen `Stream` zurück. Hier zeigt sich ein Vorteil von `Streams`: `Streams` können im Gegensatz zu Listen, Arrays und Dateien unendlich lang sein. Ein `Stream` von Zufallszahlen endet nie, und ein [[../Collections/Iterator]] darüber liefert stets `true` bei `hasNext`, egal wie viele Werte bereits entnommen wurden.

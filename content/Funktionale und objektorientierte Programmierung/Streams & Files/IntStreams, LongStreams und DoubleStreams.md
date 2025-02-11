@@ -14,7 +14,7 @@ int n = stream3.max().getAsInt();
 ```
 Die Arbeit mit einer dieser drei speziellen, nichtgenerischen [[Streams|Stream]]-Klassen ist weitestgehend identisch zur Arbeit mit der generischen `Stream`-Klasse. Wie [[Streams#^9cb8e4|Stream]] besitzt auch `IntStream` die Methode `of` zum Einrichten eines `Streams` aus einer Sequenz von Zahlen.
 
-Der Vorteil der drei spezialisierten `Streams` ist, dass Operationen auf den Datentypen umstandslos hingeschrieben werden können. `OptionalInt` ist die primitive Variante von [[Optional|Optional]]`<Integer>` für `IntStream` (analog gibt es `OptionalLong` für `LongStream` und `OptionalDouble` für `DoubleStream`).`stream3.max()` gibt ein `OptionalInt` zurück, da der maximale Wert eines Streams nicht garantiert vorhanden ist (zum Beispiel, wenn der Stream leer ist). Um den Wert aus `OptionalInt` zu extrahieren, wird `getAsInt()` verwendet.
+Der Vorteil der drei spezialisierten `Streams` ist, dass Operationen auf den Datentypen umstandslos hingeschrieben werden können. `OptionalInt` ist die primitive Variante von [[Optional]]`<Integer>` für `IntStream` (analog gibt es `OptionalLong` für `LongStream` und `OptionalDouble` für `DoubleStream`).`stream3.max()` gibt ein `OptionalInt` zurück, da der maximale Wert eines Streams nicht garantiert vorhanden ist (zum Beispiel, wenn der Stream leer ist). Um den Wert aus `OptionalInt` zu extrahieren, wird `getAsInt()` verwendet.
 
 ```java
 int n = IntStream.of(1,2,3).filter(x -> x % 2 == 1).map(x -> x * x).max().getAsInt()

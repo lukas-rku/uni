@@ -15,7 +15,7 @@ Number n2 = opt2.get(); // NoSuchElementException
 Number n3 = opt1.orElseGet(() -> 0);
 Number n4 = opt2.orElseGet(() -> 0);
 ```
-Zunächst werden zwei Variablen vom Typ Optional eingerichtet, bei denen der [[Generische Klassen|generische]] Typparameter mit Number instanziiert ist. Die Klasse `ofNullable` erzeugt ein Objekt von Klasse `Optional` und liefert einen Verweiß darauf zurück.
+Zunächst werden zwei Variablen vom Typ Optional eingerichtet, bei denen der [[../Generics/Generische Klassen|generische]] Typparameter mit Number instanziiert ist. Die Klasse `ofNullable` erzeugt ein Objekt von Klasse `Optional` und liefert einen Verweiß darauf zurück.
 
 Wenn die Methode `get` versucht, ein statt einem Objekt `null` zurückzugeben, wird eine `NoSuchElementException` geworfen. Diese kann man allerdings umgehen, indem man stattdessen `orElseGet` verwendet. Hier wird im Falle, dass `opt2` auf `null` zeigt, mit Hilfe eines Lambda-Ausdrucks %%Link für Lambda Ausdruck bitte%%die Zahl `0` zurückgegeben, statt das eine `NoSuchElementException` geworfen wird.
 ## Weitere nützliche Methoden

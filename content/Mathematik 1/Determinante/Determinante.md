@@ -4,7 +4,6 @@ description: Lernzettel - Mathematik 1
 draft: false
 date: 2025-01-25
 tags:
-  - missingImage
 ---
 [3Blue1Brown](https://www.youtube.com/watch?v=Ip3X9LOh2dk)
 ### Definition
@@ -14,4 +13,4 @@ tags:
 ### Berechnung
 $$\text{det}\left(\begin{bmatrix}a&b\\c&d\end{bmatrix}\right)=ad-bc$$
 Wenn $bc=0$ ist:
-![[Pasted image 20250114123009.png]]
+![[../../assets/Pasted image 20250114123009.png]]
