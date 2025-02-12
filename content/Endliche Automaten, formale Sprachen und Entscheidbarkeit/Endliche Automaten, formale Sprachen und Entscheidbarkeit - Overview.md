@@ -4,7 +4,9 @@ description:
 draft: true
 date: 2025-02-06
 tags:
+ - draft
 ---
+
 ## Einführung
 - [[Einführung/Transitionssysteme|Transitionssysteme]]
 - [[Einführung/Wörter über endlichen Alphabeten|Wörter über endlichen Alphabeten]]
