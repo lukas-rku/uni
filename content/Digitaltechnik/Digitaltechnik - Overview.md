@@ -21,7 +21,11 @@ tags:
 - [[Logik & Gatter/Algorithmische Logikminimierung|Algorithmische Logikminimierung]]
 - [[Logik & Gatter/Zeitverhalten|Zeitverhalten]]
 - [[Logik & Gatter/Mehrwertige Logik|Mehrwertige Logik]]
-- [[Logik & Gatter/Arithmetische Grundschalltungen|Arithmetische Grundschalltungen]]
+- [[Logik & Gatter/Arithmetische Grundschaltungen|Arithmetische Grundschaltungen]]
+- [[Logik & Gatter/Arithmetische Grundschaltungen 2|Arithmetische Grundschaltungen 2]]
+- [[Logik & Gatter/Sequentielle Schaltungen|Sequentielle Schaltungen]]
+- [[Logik & Gatter/Speicherelemente|Speicherelemente]]
+- [[Logik & Gatter/Synchrone sequentielle Logik|Synchrone sequentielle Logik]]
 
 ## SystemVerilog
 - [[SystemVerilog/Sinn eines Schichtenmodells|Sinn eines Schichtenmodells]]

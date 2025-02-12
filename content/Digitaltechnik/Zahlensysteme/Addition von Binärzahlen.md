@@ -38,4 +38,4 @@ $$
 Hier erfreut man sich tatsächlich über den [[#Addition mit Überlauf|Überlauf]]. Wichtig ist allerdings, dass beide Zahlen die gleich Breite benötigen.
 
 ## Multiplikation und Division
-Siehe [[../Logik & Gatter/Arithmetische Grundschalltungen|hier]].
+Siehe [[../Logik & Gatter/Arithmetische Grundschaltungen|hier]].

@@ -1,5 +1,5 @@
 ---
-title: Arithmetische Grundschalltungen
+title: Arithmetische Grundschaltungen
 description: Lernzettel - Digitaltechnik
 draft: false
 date: 2025-02-12
