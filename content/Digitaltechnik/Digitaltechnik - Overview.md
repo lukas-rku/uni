@@ -21,6 +21,7 @@ tags:
 - [[Logik & Gatter/Algorithmische Logikminimierung|Algorithmische Logikminimierung]]
 - [[Logik & Gatter/Zeitverhalten|Zeitverhalten]]
 - [[Logik & Gatter/Mehrwertige Logik|Mehrwertige Logik]]
+- [[Logik & Gatter/Arithmetische Grundschalltungen|Arithmetische Grundschalltungen]]
 
 ## SystemVerilog
 - [[SystemVerilog/Sinn eines Schichtenmodells|Sinn eines Schichtenmodells]]
@@ -30,6 +31,7 @@ tags:
 - [[SystemVerilog/Modulhierarchie in SystemVerilog|Modulhierarchie in SystemVerilog]]
 - [[SystemVerilog/Verzögerung in SystemVerilog|Verzögerung in SystemVerilog]]
 - [[SystemVerilog/Hochohmiger Ausgang Z und dessen falsche Synthese in SystemVerilog|Hochohmiger Ausgang Z und dessen falsche Synthese in SystemVerilog]]
+- [[SystemVerilog/Datentypen in SystemVerilog|Datentypen in SystemVerilog]]
 
 ## Zahlensysteme
 - [[Zahlensysteme/Bits und Bytes|Bits und Bytes]]
